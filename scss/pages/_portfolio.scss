@@ -3,13 +3,14 @@
 @use "../components/portfoliocard";
 
 .main {
+  font-family: Nunito Sans;
   background-color: #000;
   padding-top: 80px;
   @include mixin.flex-box(row, start, center);
   width: auto;
   text-align: center;
   h1{
-    color: #fff;
+    color: var.$secondary-color;
   }
   ul{
     margin-top: 40px;
@@ -20,6 +21,7 @@
     li{
         display: inline-block;
         border-radius: 30px;
+        transition-timing-function: ease;
         &:hover{
             background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
         }
@@ -38,3 +40,32 @@
     gap: 30px;
   }
 }
+
+// Start Media=992
+
+@media (max-width:992px){
+  .main{
+    .showPanel{
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+// End Media=992
+
+// Start Media=767
+@media (max-width:767px){
+  .main{
+    ul{
+      display: grid;
+      border-radius: 25px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .showPanel{
+      grid-template-columns: auto;
+    }
+  }
+}
+// End Media=767
