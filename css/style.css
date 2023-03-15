@@ -119,7 +119,7 @@ input:checked + .slider:before {
 
 .showPanel__card {
   position: relative;
-  width: 433px;
+  width: 403px;
 }
 .showPanel__card img {
   width: 100%;
@@ -167,11 +167,43 @@ input:checked + .slider:before {
 }
 
 main {
+  background-color: #000;
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   width: auto;
+  text-align: center;
+}
+main h1 {
+  color: #fff;
+}
+main ul {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid #4E4E4E;
+  border-radius: 90px;
+  width: auto;
+}
+main ul li {
+  display: inline-block;
+  border-radius: 30px;
+}
+main ul li:hover {
+  background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+}
+main ul li button {
+  color: #fff;
+  padding: 16px 50px;
+  border-radius: 90px;
+  outline: none;
+}
+main .showPanel {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
