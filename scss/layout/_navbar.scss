@@ -6,6 +6,8 @@
     padding: 0;
 }
 
+// Navbar begins
+
 .navbar {
     padding: 15px 0;
     background-color: var.$nav-color;
@@ -37,6 +39,10 @@
         font-size: 20px;
         line-height: 24px;
         color: var.$secondary-color;
+        transition: .3s;
+        &:hover{
+            color: var.$btn-color;
+        }
     }
 
     &__right {
@@ -73,7 +79,7 @@
         .navbar-switch {
             margin-right: 5px;
         }
-
+// Dark Night switch
         .navbar-switch {
             display: inline-block;
             position: relative;
@@ -99,12 +105,12 @@
             height: 40px;
             cursor: pointer;
             transition: .4s;
-            border: 1px solid #AAAAAA;
+            border: 1px solid var.$gray;
             border-radius: 40px;
         }
 
         .navbar-slider:before {
-            background-color: #5454D4;
+            background-color: var.$purple;
             content: url('../../images/navbar/sun.svg');
             padding-top: 2px;
             padding-left: 3px;

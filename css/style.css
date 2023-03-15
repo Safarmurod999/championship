@@ -180,6 +180,10 @@ input:checked + .slider:before {
   font-size: 20px;
   line-height: 24px;
   color: #fff;
+  transition: 0.3s;
+}
+.navbar__link:hover {
+  color: #6911AD;
 }
 .navbar__right {
   display: flex;
