@@ -256,7 +256,7 @@ let tabObj5 = [
   },
 ];
 
-let arr=[tabObj1,tabObj2,tabObj3,tabObj4,tabObj5]
+let arr = [tabObj1, tabObj2, tabObj3, tabObj4, tabObj5]
 
 function getCard(img, title) {
   return `<div class="showPanel__card">
@@ -275,16 +275,18 @@ function renderCardPrf(obj) {
   }
 }
 
+renderCardPrf(arr[0]);
+
 const tabBtn = document.querySelectorAll('.tabBtn li');
 tabBtn[0].style.background = "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
 
 function showTab(index) {
-    tabBtn.forEach(el=>{
-        el.style.background="transparent";
-    })
-    section.innerHTML="";
-    tabBtn[index].style.background = "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
-    renderCardPrf(arr[index]);
+  tabBtn.forEach(el => {
+    el.style.background = "transparent";
+  })
+  section.innerHTML="";
+  tabBtn[index].style.background = "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
+  renderCardPrf(arr[index]);
 }
 
-renderCardPrf(arr[0]);
+

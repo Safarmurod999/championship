@@ -2,14 +2,15 @@
 @use "../abstract/variables" as var;
 @use "../components/portfoliocard";
 
-main {
+.main {
+  font-family: Nunito Sans;
   background-color: #000;
-  margin-top: 80px;
+  padding-top: 80px;
   @include mixin.flex-box(row, start, center);
   width: auto;
   text-align: center;
   h1{
-    color: #fff;
+    color: var.$secondary-color;
   }
   ul{
     margin-top: 40px;
@@ -39,3 +40,32 @@ main {
     gap: 30px;
   }
 }
+
+// Start Media=992
+
+@media (max-width:992px){
+  .main{
+    .showPanel{
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+// End Media=992
+
+// Start Media=767
+@media (max-width:767px){
+  .main{
+    ul{
+      display: grid;
+      border-radius: 25px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .showPanel{
+      grid-template-columns: auto;
+    }
+  }
+}
+// End Media=767

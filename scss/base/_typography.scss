@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Regular.woff2') format('woff2'),
+        url('Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url("../../fonts/proximanova_regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Nunito Sans;
+    src: url("../../fonts/NunitoSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url('../../fonts/Mulish-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
