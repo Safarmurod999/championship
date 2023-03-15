@@ -1,0 +1,161 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin;
+
+.navbar .container .navbar__container * {
+    margin: 0;
+    padding: 0;
+}
+
+// Navbar begins
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: var.$nav-color;
+    z-index: 10;
+
+    &__container {
+        width: 100%;
+        @include mixin.flex-box(row, space-between, center)
+    }
+
+    &__logo {
+        img {
+            width: 72px;
+            height: 50px;
+        }
+    }
+
+    &__menus {
+        @include mixin.flex-box(row, space-between, center);
+        gap: 207px;
+    }
+
+    &__list {
+        @include mixin.flex-box(row, space-between, center);
+        gap: 16px;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        font-family: Proxima Nova;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: var.$secondary-color;
+        transition: .3s;
+
+        &:hover {
+            color: var.$btn-color;
+        }
+    }
+
+    &__right {
+        @include mixin.flex-box(row, center, center);
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &-contact,
+        &-call {
+            @include mixin.flex-box(column, center, start);
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 700;
+            color: var.$secondary-color;
+        }
+
+        &-number {
+            font-size: 20px;
+            line-height: 24px;
+            color: var.$secondary-color;
+            margin-bottom: 3px;
+        }
+
+        &-email {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &-call {
+            padding: 12px 21px !important;
+            background: var.$btn-color;
+            border-radius: 7px;
+        }
+
+        .navbar-switch {
+            margin-right: 5px;
+        }
+
+        // Dark Night switch
+        .navbar-switch {
+            display: inline-block;
+            position: relative;
+
+            &-wrapper {
+                display: flex;
+                align-items: center;
+
+                em {
+                    margin-left: 10px;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .navbar-switch input {
+            display: none;
+        }
+
+        .navbar-slider {
+            background-color: transparent;
+            width: 93px;
+            height: 40px;
+            cursor: pointer;
+            transition: .4s;
+            border: 1px solid var.$gray;
+            border-radius: 40px;
+        }
+
+        .navbar-slider:before {
+            background-color: var.$purple;
+            content: url('../../images/navbar/sun.svg');
+            padding-top: 1px;
+            padding-left: 3px;
+            width: 36px;
+            height: 36px;
+            top: 2px;
+            position: absolute;
+            transition: .4s;
+        }
+
+        input:checked+.navbar-slider:before {
+            content: url('../../images/navbar/moon.svg');
+        }
+
+        input:checked+.navbar-slider:before {
+            transform: translateX(52px);
+        }
+
+        .navbar-slider.round {
+            border-radius: 34px;
+        }
+
+        .navbar-slider.round:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width:1100px){
+    .navbar{
+        &__list{
+            flex-direction: column;
+        }
+        &__right{
+            flex-direction: column;
+        }
+    }
+}
