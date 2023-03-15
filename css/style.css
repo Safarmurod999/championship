@@ -147,8 +147,13 @@ input:checked + .slider:before {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 15px 0;
   background-color: rgba(23, 25, 29, 0.7);
+  z-index: 10;
 }
 .navbar__container {
   width: 100%;
@@ -166,6 +171,7 @@ input:checked + .slider:before {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 207px;
 }
 .navbar__list {
   display: flex;
@@ -249,7 +255,7 @@ input:checked + .slider:before {
 .navbar__right .navbar-slider:before {
   background-color: #5454D4;
   content: url("../../images/navbar/sun.svg");
-  padding-top: 2px;
+  padding-top: 1px;
   padding-left: 3px;
   width: 36px;
   height: 36px;
@@ -261,7 +267,7 @@ input:checked + .slider:before {
   content: url("../../images/navbar/moon.svg");
 }
 .navbar__right input:checked + .navbar-slider:before {
-  transform: translateX(54px);
+  transform: translateX(52px);
 }
 .navbar__right .navbar-slider.round {
   border-radius: 34px;
@@ -270,12 +276,101 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-main {
+@media (max-width: 1100px) {
+  .navbar__list {
+    flex-direction: column;
+  }
+  .navbar__right {
+    flex-direction: column;
+  }
+}
+.showPanel__card {
+  position: relative;
+  width: 403px;
+}
+.showPanel__card img {
+  width: 100%;
+}
+.showPanel__card span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: inline-block;
+  padding: 9px;
+  text-align: center;
+  background-color: #fff;
+  width: 121px;
+  height: 37px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.showPanel__card-hover {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+  width: 93%;
+  height: 91%;
+}
+.showPanel__card-hover img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+.showPanel__card-hover p {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.showPanel__card:hover .showPanel__card-hover {
+  display: block;
+}
+
+.main {
+  background-color: #000;
+  padding-top: 80px;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   width: auto;
+  text-align: center;
+}
+.main h1 {
+  color: #fff;
+}
+.main ul {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid #4E4E4E;
+  border-radius: 90px;
+  width: auto;
+}
+.main ul li {
+  display: inline-block;
+  border-radius: 30px;
+}
+.main ul li:hover {
+  background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+}
+.main ul li button {
+  color: #fff;
+  padding: 16px 50px;
+  border-radius: 90px;
+  outline: none;
+}
+.main .showPanel {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

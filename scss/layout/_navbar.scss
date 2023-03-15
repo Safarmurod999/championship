@@ -9,8 +9,13 @@
 // Navbar begins
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 15px 0;
     background-color: var.$nav-color;
+    z-index: 10;
 
     &__container {
         width: 100%;
@@ -26,6 +31,7 @@
 
     &__menus {
         @include mixin.flex-box(row, space-between, center);
+        gap: 207px;
     }
 
     &__list {
@@ -116,7 +122,7 @@
         .navbar-slider:before {
             background-color: var.$purple;
             content: url('../../images/navbar/sun.svg');
-            padding-top: 2px;
+            padding-top: 1px;
             padding-left: 3px;
             width: 36px;
             height: 36px;
@@ -130,7 +136,7 @@
         }
 
         input:checked+.navbar-slider:before {
-            transform: translateX(54px);
+            transform: translateX(52px);
         }
 
         .navbar-slider.round {
@@ -139,6 +145,17 @@
 
         .navbar-slider.round:before {
             border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width:1100px){
+    .navbar{
+        &__list{
+            flex-direction: column;
+        }
+        &__right{
+            flex-direction: column;
         }
     }
 }

@@ -16,9 +16,33 @@
         ></nav>
       </header>
     <main>
-        <h1>Bajargan loyihalarimiz</h1>
+       <section class="main">
+        <div class="container">
+          <h1>Bajargan loyihalarimiz</h1>
+          <div class="wrap">
+            <ul class="tabBtn">
+              <li><button onclick="showTab(0)">Barchasi</button></li>
+              <li><button onclick="showTab(1)">Veb sayt</button></li>
+              <li><button onclick="showTab(2)">Veb dizayn</button></li>
+              <li><button onclick="showTab(3)">SMM</button></li>
+              <li><button onclick="showTab(4)">Mobil ilova</button></li>
+            </ul>
+            <div class="showPanel">
+              <!-- <div class="showPanel__card">
+                <img src="./images/portfolio/portfolio-1.png" alt="">
+                <span>Mobil ilova</span>
+                <div class="showPanel__card-hover">
+                  <img src="./images/portfolio/arrow.svg" alt="">
+                  <p>UYMAKON mobil ilovasi</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
     <footer id="footer" class="footer" w3-include-html="footer.html"></footer>
   <script type="module" src="main.js"></script>
+  <script src="./src/protfoolio.js"></script>
 </body>
 </html>
