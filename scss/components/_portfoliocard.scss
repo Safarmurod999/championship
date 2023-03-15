@@ -1,0 +1,49 @@
+.showPanel__card {
+    position: relative;
+    width: 433px;
+    img {
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: inline-block;
+      padding: 9px;
+      text-align: center;
+      background-color: #fff;
+      width: 121px;
+      height: 37px;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    &-hover {
+      display: none;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(0, 0, 0, 0.87);
+      border-radius: 5px;
+      width: 93%;
+      height: 91%;
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+      }
+      p {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+      }
+    }
+    &:hover &-hover {
+      display: block;
+    }
+  }
+  
