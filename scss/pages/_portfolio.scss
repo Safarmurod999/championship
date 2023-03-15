@@ -20,6 +20,7 @@ main {
     li{
         display: inline-block;
         border-radius: 30px;
+        transition-timing-function: ease;
         &:hover{
             background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
         }
