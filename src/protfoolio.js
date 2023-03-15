@@ -276,13 +276,9 @@ function renderCardPrf(obj) {
 }
 
 const tabBtn = document.querySelectorAll('.tabBtn li');
-const tabPanel = document.querySelectorAll('.tabPanel');
 tabBtn[0].style.background = "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
 
 function showTab(index) {
-    tabPanel.forEach(el=>{
-        el.style.display="none";
-    })
     tabBtn.forEach(el=>{
         el.style.background="transparent";
     })
