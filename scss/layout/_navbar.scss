@@ -1,7 +1,7 @@
 @use "../abstract/variables" as var;
 @use "../abstract/mixin" as mixin;
 
-.navbar .container * {
+.navbar .container .navbar__container * {
     margin: 0;
     padding: 0;
 }
@@ -13,6 +13,7 @@
     background-color: var.$nav-color;
 
     &__container {
+        width: 100%;
         @include mixin.flex-box(row, space-between, center)
     }
 
@@ -40,7 +41,8 @@
         line-height: 24px;
         color: var.$secondary-color;
         transition: .3s;
-        &:hover{
+
+        &:hover {
             color: var.$btn-color;
         }
     }
@@ -50,7 +52,8 @@
         flex-wrap: wrap;
         gap: 30px;
 
-        &-contact,&-call {
+        &-contact,
+        &-call {
             @include mixin.flex-box(column, center, start);
             font-family: Proxima Nova;
             font-style: normal;
@@ -79,7 +82,8 @@
         .navbar-switch {
             margin-right: 5px;
         }
-// Dark Night switch
+
+        // Dark Night switch
         .navbar-switch {
             display: inline-block;
             position: relative;

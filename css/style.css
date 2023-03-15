@@ -141,7 +141,7 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
-.navbar .container * {
+.navbar .container .navbar__container * {
   margin: 0;
   padding: 0;
 }
@@ -151,6 +151,7 @@ input:checked + .slider:before {
   background-color: rgba(23, 25, 29, 0.7);
 }
 .navbar__container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
