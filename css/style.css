@@ -301,7 +301,7 @@ input:checked + .slider:before {
   background-color: #fff;
   width: 121px;
   height: 37px;
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.87);
   border-radius: 10px;
 }
 .showPanel__card-hover {
@@ -335,7 +335,7 @@ input:checked + .slider:before {
 
 .main {
   font-family: Nunito Sans;
-  background-color: #000;
+  background-color: #1E1E1E;
   padding-top: 80px;
   display: flex;
   flex-direction: row;

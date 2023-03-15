@@ -4,7 +4,7 @@
 
 .main {
   font-family: Nunito Sans;
-  background-color: #000;
+  background-color: var.$bg-main-color;
   padding-top: 80px;
   @include mixin.flex-box(row, start, center);
   width: auto;
@@ -15,7 +15,7 @@
   ul{
     margin-top: 40px;
     display: inline-block;
-    border: 1px solid #4E4E4E;
+    border: 1px solid var.$border-color;
     border-radius: 90px;
     width: auto;
     li{
@@ -23,10 +23,10 @@
         border-radius: 30px;
         transition-timing-function: ease;
         &:hover{
-            background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+            background: var.$tab-color;
         }
         button{
-            color: #fff;
+            color: var.$secondary-color;
             padding: 16px 50px;
             border-radius: 90px;
             outline: none;
