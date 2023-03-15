@@ -342,7 +342,7 @@ input:checked + .slider:before {
 
 .main {
   font-family: Nunito Sans;
-  background-color: #000;
+  background-color: #1E1E1E;
   padding-top: 80px;
   display: flex;
   flex-direction: row;
