@@ -30,7 +30,7 @@ main{
                 width: 900px;
                 height: 660px;
                 z-index: 0;
-                margin-left: -170px;
+                margin-left: -130px;
                 margin-top: -220px;
             }
             &__title{
@@ -56,6 +56,10 @@ main{
                 text-align: center;
                 margin: 20px;
                 margin-top: 28%;
+                border-radius: 50%;
+                width: 65px;
+                height: 65px;
+                background-color: var.$btn-color;
                 color: var.$secondary-color;
             }
         }
