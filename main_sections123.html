@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 <link rel="stylesheet" href="css/style.css">
 </head>
 </head>
@@ -17,9 +19,10 @@
         ></nav>
       </header>
       <main>
-            <div class="container style">
                 <!-- The first section on the home page -->
-                <section class="section1">
+                <section>
+                  <div class="container style">
+                    <div class="section1">
                     <div class="section1__hero">
                         <h1 class="section1__hero__title">
                             Biz veb-saytlar,  ilovalarni 
@@ -32,18 +35,22 @@
                         <img src="./images/home/home-bg-elipse1.png" alt="image">
                     </div>
                     <div class="section1__globus">
-                        <img src="./images/home/home-bg-elipse2.png" alt="">
+                        <img src="./images/home/home-bg-elipse2.png" alt="image">
                         <canvas class="canvas"
                             id="cobe"
                             width="1000"
                             height="1000"
                             ></canvas>
                     </div>
+                    </div>
+                    </div>
                 </section>
 
                 <!-- The second section on the home page -->
 
-                <section class="section2">
+                <section>
+                  <div class="container style">
+                    <div class="section2">
                     <div class="section2__group1">
                         <h2 class="section2__group1__title">Kompaniya haqida</h2>
                         <p class="section2__group1__text">Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan va sifatli mahsulotni taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali veb-dizayn, ishlab chiqish va marketing mutaxassislaridan iborat.
@@ -68,28 +75,35 @@
                             <p>Опыта разработки</p>
                         </div>
                     </div>
+                    </div>
+                    </div>
                 </section>
 
                 <!-- The third section on the home page -->
 
-                <section class="section3">
+                <section>
+                  <div class="container style">
+                    <div class="section3">
                     <h2>Bizning afzalliklarimiz</h2>
                     <div class="section3__cards" id="card">
 
                     </div>
+                    </div>
+                    </div>
                 </section>
+                </div>
                 <section class="main">
                     <div class="container">
                       <h1>Bajargan loyihalarimiz</h1>
                       <div class="wrap">
                         <ul class="tabBtn">
-                          <li><button onclick="showTabHome(0)">Barchasi</button></li>
-                          <li><button onclick="showTabHome(1)">Veb sayt</button></li>
-                          <li><button onclick="showTabHome(2)">Veb dizayn</button></li>
-                          <li><button onclick="showTabHome(3)">SMM</button></li>
-                          <li><button onclick="showTabHome(4)">Mobil ilova</button></li>
+                          <li><button onclick="showTab(0)">Barchasi</button></li>
+                          <li><button onclick="showTab(1)">Veb sayt</button></li>
+                          <li><button onclick="showTab(2)">Veb dizayn</button></li>
+                          <li><button onclick="showTab(3)">SMM</button></li>
+                          <li><button onclick="showTab(4)">Mobil ilova</button></li>
                         </ul>
-                        <div class="showPanel2">
+                        <div class="showPanel">
                           <!-- <div class="showPanel__card">
                               <img src="./images/portfolio/portfolio-1.png" alt="">
                               <span>Mobil ilova</span>
@@ -103,15 +117,14 @@
                       </div>
                     </div>
                   </section>
-            </div> 
       </main>
 <footer id="footer" class="footer" w3-include-html="footer.html">
 
 </footer>
   <script type="module" src="main.js"></script>
-  <script src="./src/homePortfolio.js"></script>
+  <script src="./src/protfoolio.js"></script>
   <script src="./src/home_cards.js"></script>
-  <!-- <script type="module">
+  <script type="module">
     /* home page section1 globus */
 
 import createGlobe from 'https://cdn.skypack.dev/cobe'
@@ -145,7 +158,7 @@ state.phi = phi
 phi += 0.01
 },
 })
-  </script> -->
+  </script>
   
 
 
