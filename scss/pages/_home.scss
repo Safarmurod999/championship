@@ -29,8 +29,10 @@ main{
                 z-index: 1;
                 width: 900px;
                 height: 660px;
-                margin-left: -150px;
-                margin-top: -220px;
+                top: 0;
+                right: 0;
+                // margin-left: -150px;
+                // margin-top: -220px;
             }
             &__title{
                 width: 40rem;
