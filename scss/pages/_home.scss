@@ -9,6 +9,10 @@ main{
 .style{
     background: url('../../images/home/bg-noice.svg');
 }
+section{
+    width: 100%;
+    position: relative;
+}
 .container{
     .section1{
         display: flex;
@@ -64,6 +68,9 @@ main{
                 height: 65px;
                 background-color: var.$btn-color;
                 color: var.$secondary-color;
+            }
+            .section1__hero__button:hover{
+                width: 140px;
             }
         }
         &__globus{

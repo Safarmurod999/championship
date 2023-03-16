@@ -362,6 +362,11 @@ main {
   background: url("../../images/home/bg-noice.svg");
 }
 
+section {
+  width: 100%;
+  position: relative;
+}
+
 .container .section1 {
   display: flex;
   position: relative;
@@ -415,6 +420,9 @@ main {
   height: 65px;
   background-color: #6911AD;
   color: #fff;
+}
+.container .section1__hero .section1__hero__button:hover {
+  width: 140px;
 }
 .container .section1__globus {
   width: 50%;
