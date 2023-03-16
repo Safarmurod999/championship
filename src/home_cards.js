@@ -1,4 +1,4 @@
-let section = document.getElementById("card");
+let sectionCard = document.getElementById("card");
 
 let obj = [
     {
@@ -45,5 +45,5 @@ function getCard(img, title, content) {
 }
 
 for (const el of obj) {
-    section.innerHTML += getCard(el.img, el.title, el.content);
+    sectionCard.innerHTML += getCard(el.img, el.title, el.content);
 }

@@ -11,6 +11,7 @@ ul {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 input, select {
@@ -19,6 +20,7 @@ input, select {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 main {
@@ -323,7 +325,7 @@ main {
   z-index: 1;
   width: 900px;
   height: 660px;
-  margin-left: -140px;
+  margin-left: -150px;
   margin-top: -220px;
 }
 .container .section1__hero__title {
@@ -476,11 +478,6 @@ main {
   line-height: 22px;
 }
 
-@media only screen and (max-width: 450px) {
-  .container .section1 {
-    display: block;
-  }
-}
 .showPanel__card {
   position: relative;
   width: 403px;
@@ -498,7 +495,7 @@ main {
   background-color: #fff;
   width: 121px;
   height: 37px;
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.87);
   border-radius: 10px;
 }
 .showPanel__card-hover {
@@ -507,9 +504,9 @@ main {
   top: 15px;
   left: 15px;
   background: rgba(0, 0, 0, 0.87);
-  border-radius: 5px;
+  border-radius: 10px;
   width: 93%;
-  height: 91%;
+  height: 90.5%;
 }
 .showPanel__card-hover img {
   position: absolute;

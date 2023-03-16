@@ -9,10 +9,12 @@
   @include mixin.flex-box(row, start, center);
   width: auto;
   text-align: center;
-  h1{
+
+  h1 {
     color: var.$secondary-color;
   }
-  ul{
+
+  ul {
     margin-top: 40px;
     display: inline-block;
     border: 1px solid var.$border-color;
@@ -32,7 +34,8 @@
             outline: none;
         }
     }
-}
+  }
+
   .showPanel {
     margin-top: 40px;
     display: grid;
@@ -43,9 +46,9 @@
 
 // Start Media=992
 
-@media (max-width:992px){
-  .main{
-    .showPanel{
+@media (max-width:992px) {
+  .main {
+    .showPanel {
       grid-template-columns: auto auto;
     }
   }
@@ -54,18 +57,20 @@
 // End Media=992
 
 // Start Media=767
-@media (max-width:767px){
-  .main{
-    ul{
+@media (max-width:767px) {
+  .main {
+    ul {
       display: grid;
       border-radius: 25px;
       width: 60%;
       margin: 0 auto;
       margin-top: 20px;
     }
-    .showPanel{
+
+    .showPanel {
       grid-template-columns: auto;
     }
   }
 }
+
 // End Media=767
