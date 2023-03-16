@@ -1,4 +1,3 @@
-let section = document.querySelector(".showPanel");
 let section2 = document.querySelector(".showPanel2");
 
 let tabObj1 = [
@@ -258,7 +257,8 @@ let tabObj5 = [
 ];
 
 let arr = [tabObj1, tabObj2, tabObj3, tabObj4, tabObj5];
-
+let arr2 = [tabObj1.slice(6)];
+console.log(arr2);
 function getCard(img, title) {
   return `<div class="showPanel__card">
     <img src="${img}" alt="">
