@@ -367,7 +367,6 @@ main {
   position: relative;
   background: url("../../images/home/home-bg-vectors.png");
   background-repeat: no-repeat;
-  top: -100px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .container .section1__hero {
@@ -517,7 +516,7 @@ main {
   justify-content: center;
   padding: 30.83px;
   border-radius: 20px;
-  background: #111317;
+  background: rgba(17, 19, 23, 0.662745098);
   border: 1px solid rgba(78, 78, 78, 0.8117647059);
   backdrop-filter: blur(2.5px);
 }
