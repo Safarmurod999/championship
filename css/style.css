@@ -302,11 +302,9 @@ main {
   background: url("../../images/home/bg-noice.svg");
 }
 
-.container {
-  padding: 0;
-}
 .container .section1 {
   display: flex;
+  position: relative;
   background: url("../../images/home/home-bg-vectors.png");
   background-repeat: no-repeat;
   padding: 0px 5px;
@@ -325,7 +323,8 @@ main {
   z-index: 1;
   width: 900px;
   height: 660px;
-  margin-left: -150px;
+  z-index: 0;
+  margin-left: -170px;
   margin-top: -220px;
 }
 .container .section1__hero__title {
@@ -374,6 +373,7 @@ main {
 }
 .container .section2 {
   display: flex;
+  position: relative;
   height: 600px;
   color: #fff;
 }
@@ -425,6 +425,7 @@ main {
 }
 .container .section3 {
   height: 750px;
+  position: relative;
   text-align: center;
   padding: 20px;
   color: #fff;
@@ -478,6 +479,14 @@ main {
   line-height: 22px;
 }
 
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 100%;
+  }
+  .container .section3 {
+    grid-template-columns: auto auto;
+  }
+}
 .showPanel__card {
   position: relative;
   width: 403px;
