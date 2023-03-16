@@ -137,6 +137,12 @@ input:checked + .slider:before {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Futura PT;
+  src: url("../../fonts/FuturaPTMedium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
   max-width: 1400px;
   padding: 0 20px;
@@ -302,6 +308,9 @@ main {
   background: url("../../images/home/bg-noice.svg");
 }
 
+.container {
+  padding: 0;
+}
 .container .section1 {
   display: flex;
   background: url("../../images/home/home-bg-vectors.png");
@@ -354,10 +363,14 @@ main {
   width: 50%;
   padding: 7rem 0rem;
   height: 45rem;
-  background: url("../../images/home/home-bg-elipse2.png");
-  background-repeat: no-repeat;
-  background-position-x: 20rem;
-  background-position-y: -5rem;
+}
+.container .section1__globus img {
+  position: absolute;
+  width: 514.82px;
+  height: 657.4px;
+  z-index: 0;
+  top: 0px;
+  margin-left: 185px;
 }
 .container .section1__globus .canvas {
   width: 500px;
@@ -435,6 +448,7 @@ main {
   grid-template-columns: auto auto auto;
   gap: 10px;
   padding: 30px 5px;
+  /* Here are the styles of the card classes added via javascript */
 }
 .container .section3__cards .card {
   display: flex;
