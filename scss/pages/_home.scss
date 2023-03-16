@@ -15,8 +15,7 @@ main{
         position: relative;
         background: url('../../images/home/home-bg-vectors.png');
         background-repeat: no-repeat;
-        padding: 0px 5px;
-        margin-top: 10px;
+        top: -100px;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         &__hero{
             width: 50%;
@@ -25,13 +24,18 @@ main{
             font-family: Proxima Nova;
             font-style: normal;
             img{
-                position: absolute;
+                position: relative;
                 z-index: 1;
                 width: 900px;
                 height: 660px;
+//<<<<<<< HEAD
                 z-index: 0;
-                margin-left: -130px;
-                margin-top: -220px;
+                margin-left: -20px;
+                margin-top: -500px;
+//=======
+                top: 0;
+                right: 0;
+//>>>>>>> 41fc8bb2f527a26d1974569c9c7d35490ff65f81
             }
             &__title{
                 width: 40rem;

@@ -1,0 +1,68 @@
+ @use "../abstract/variables" as var;
+ @use "../abstract/mixin" as mixin;
+
+  .footer{
+    padding: 20px 0;
+    background-color: var.$nav-color;
+    z-index: 10;
+    &__container{
+        width: 100%;
+        @include mixin.flex-box(row, space-between, center)  
+    }
+    &__logo{
+        // width: 100%;
+        &__logo-img{
+            width: 158px;
+            height: 66px;
+        }
+     
+    }
+    &__title{
+        @include mixin.flex-box(row, space-between, center) ; 
+        &__title-img{
+        width:17px;
+        height: 17px;
+     }
+     &__title-desc{
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        
+        color: var.$secondary-color;
+     }
+
+    }
+    &__telephone{
+        width: 100%;
+        @include mixin.flex-box(row, space-between, center) ; 
+        &__telephone-img{
+            width: 17px;
+            height: 17px;
+        }
+        &__telephone-number{
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.06em;
+            
+            color: var.$secondary-color;
+        }
+
+    }
+    &__img{
+        
+        @include mixin.flex-box(row, space-between, center) ; 
+        img{
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+
+  }
+  
