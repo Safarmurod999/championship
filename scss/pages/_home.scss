@@ -10,6 +10,7 @@ main{
     background: url('../../images/home/bg-noice.svg');
 }
 .container{
+    padding: 0;
     .section1{
         display: flex;
         background: url('../../images/home/home-bg-vectors.png');
@@ -28,7 +29,7 @@ main{
                 z-index: 1;
                 width: 900px;
                 height: 660px;
-                margin-left: -150px;
+                margin-left: -140px;
                 margin-top: -220px;
             }
             &__title{
@@ -61,10 +62,18 @@ main{
             width: 50%;
             padding: 7rem 0rem;
             height: 45rem;
-            background: url('../../images/home/home-bg-elipse2.png');
-            background-repeat: no-repeat;
-            background-position-x: 20rem;
-            background-position-y: -5rem;
+            // background: url('../../images/home/home-bg-elipse2.png');
+            // background-repeat: no-repeat;
+            // background-position-x: 22rem;
+            // background-position-y: -5rem;
+            img{
+                position: absolute;
+                width: 514.82px;
+                height: 657.4px;
+                z-index: 0;
+                top: 0px;
+                margin-left: 185px;
+            }
             .canvas{
                 width: 500px;
                 height: 500px;
@@ -143,6 +152,9 @@ main{
             grid-template-columns: auto auto auto;
             gap: 10px;
             padding: 30px 5px;
+
+            /* Here are the styles of the card classes added via javascript */
+
             .card{
                 display: flex;
                 flex-direction: column;
@@ -178,6 +190,15 @@ main{
                     line-height: 22px;
                 }
             }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .container{
+        .section1{
+            display: block;
         }
     }
 }
