@@ -264,7 +264,7 @@ function getCard(img, title) {
     <span>${title}</span>
     <div class="showPanel__card-hover">
       <img src="./images/portfolio/arrow.svg" alt="">
-      <p>UYMAKON mobil ilovasi</p>
+      <p>UYMAKON ${title}</p>
     </div>
   </div>`;
 }
