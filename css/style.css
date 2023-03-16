@@ -521,7 +521,7 @@ main {
 }
 
 .main {
-  font-family: Nunito Sans;
+  font-family: Proxima Nova;
   background-color: #1E1E1E;
   padding-top: 80px;
   display: flex;
@@ -533,6 +533,9 @@ main {
 }
 .main h1 {
   color: #fff;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
 }
 .main ul {
   margin-top: 40px;
@@ -555,11 +558,116 @@ main {
   border-radius: 90px;
   outline: none;
 }
-.main .showPanel, .main .showPanel2 {
+.main ul a {
+  margin-top: 40px;
+}
+.main .showPanel,
+.main .showPanel2 {
   margin-top: 40px;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 30px;
+}
+
+.form {
+  font-family: Proxima Nova;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(14, 16, 20, 0.9);
+  border: 1px solid #4E4E4E;
+  color: #fff;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  padding: 60px 80px;
+}
+.form__left h3 {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.44rem;
+  margin-bottom: 40px;
+}
+.form__left input {
+  width: 75%;
+  display: block;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #AAAAAA;
+  padding: 8px 0px;
+  margin-top: 17px;
+}
+.form__left input::placeholder {
+  font-weight: 400;
+  font-size: 1.06rem;
+  line-height: 1.31rem;
+}
+.form__left input:valid {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.06rem;
+  line-height: 1.31rem;
+}
+.form h4 {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.81rem;
+}
+.form__checkbox {
+  margin-top: 4px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.form__checkbox-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  margin-top: 30px;
+}
+.form__checkbox-box input[type=checkbox] {
+  background: transparent;
+  color: #1E1E1E;
+  border: 1px solid #AAAAAA;
+  border-radius: 4px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 4px;
+}
+.form__checkbox-box label {
+  font-weight: 600;
+  font-size: 1.13rem;
+  line-height: 1.4rem;
+}
+.form__drinks {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  background: rgba(83, 83, 83, 0.1);
+  box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 40px 60px;
+  gap: 66px;
+}
+.form__drinks input {
+  display: none;
+}
+.form__drinks label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.81rem;
+  margin-top: 10px;
 }
 
 @media (max-width: 992px) {

@@ -266,10 +266,10 @@ let arr2 = [
 
 function getCard(img, title) {
   return `<div class="showPanel__card">
-      <img src="${img}" alt="">
+      <img src="${img}" alt="${title}">
       <span>${title}</span>
       <div class="showPanel__card-hover">
-        <img src="./images/portfolio/arrow.svg" alt="">
+        <img src="./images/portfolio/arrow.svg" alt="arrow">
         <p>UYMAKON ${title}</p>
       </div>
     </div>`;
