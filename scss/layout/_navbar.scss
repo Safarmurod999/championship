@@ -4,14 +4,11 @@
 // Navbar begins
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 0;
-    background-color: var.$nav-color;
-    z-index: 10;
-
+    padding: 15px 0 !important;
+    background-color: var.$nav-color !important;
+    p{
+        margin: 0;
+    }
     &__container {
         width: 100%;
         @include mixin.flex-box(row, space-between, center)
@@ -24,20 +21,7 @@
             height: 50px;
        }
     }
-
-    &__menus {
-        @include mixin.flex-box(row, space-between, center);
-        flex-grow: 1;
-    }
-
-    &__list {
-
-        margin-left: 152px;
-        @include mixin.flex-box(row, space-between, center);
-        margin-bottom: 0;
-    }
-
-    &__link {
+    &-link {
         font-family: Proxima Nova;
         font-weight: 700;
         font-size: 20px;
@@ -50,13 +34,13 @@
         }
       
     }
-    &__item:nth-child(0){
+    &-item:nth-child(0){
         margin-right: 16px;
     }
-    &__item :nth-child(1){
+    &-item :nth-child(1){
         margin-right: 14px;
     }
-    &:nth-child(2){
+    &-item:nth-child(2){
         margin-right: 18px;
     }
 
