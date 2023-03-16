@@ -6,12 +6,10 @@
 .navbar {
     padding: 15px 0 !important;
     background-color: var.$nav-color !important;
-
     .offcanvas {
         background-color: var.$nav-color !important;
         opacity: 1;
     }
-
     &-toggler {
         border-color: var.$secondary-color;
         &-icon{
@@ -29,7 +27,7 @@
         margin: 0;
     }
 
-    &__logo {
+    &-brand {
         height: 50px;
 
         img {
@@ -41,8 +39,8 @@
     &-link {
         font-family: Proxima Nova;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         color: var.$secondary-color;
         transition: .3s;
 
@@ -67,7 +65,7 @@
     &__right {
         @include mixin.flex-box(row, center, center);
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 31px;
 
         &-contact,
         &-call {
@@ -79,15 +77,15 @@
         }
 
         &-number {
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
             color: var.$secondary-color;
             margin-bottom: 3px;
         }
 
         &-email {
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 0.875rem;
+            line-height: 1.0625rem;
         }
 
         &-call {
@@ -97,7 +95,7 @@
         }
 
         .navbar-switch {
-            margin-right: 5px;
+            margin-right: 9px;
         }
 
         // Dark Night switch
@@ -160,7 +158,7 @@
     }
 }
 
-@media (max-width : 1220px){
+@media (max-width : 1200px){
 
     .navbar{
         &-link,&-item{

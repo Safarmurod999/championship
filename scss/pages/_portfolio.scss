@@ -4,7 +4,7 @@
 
 .main {
   font-family: Nunito Sans;
-  background-color: var.$bg-main-color;
+  background-color: transparent;
   padding-top: 80px;
   @include mixin.flex-box(row, start, center);
   width: auto;
@@ -37,7 +37,7 @@
   }
 
   .showPanel,.showPanel2 {
-    margin-top: 40px;
+    padding: 40px 0;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;

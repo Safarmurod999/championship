@@ -3,28 +3,35 @@
 
 
 /* section1 pages scss */
-main{
+main {
     background-color: var.$bg-main-color;
 }
-.style{
+
+.style {
     background: url('../../images/home/bg-noice.svg');
 }
-.container{
+
+.container {
     padding: 0;
-    .section1{
+    ul{
+        padding-left: 0;
+    }
+    .section1 {
         display: flex;
         background: url('../../images/home/home-bg-vectors.png');
         background-repeat: no-repeat;
         padding: 0px 5px;
         margin-top: 10px;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        &__hero{
+
+        &__hero {
             width: 50%;
             padding: 7rem 0rem;
             height: 45rem;
             font-family: Proxima Nova;
             font-style: normal;
-            img{
+
+            img {
                 position: absolute;
                 z-index: 1;
                 width: 900px;
@@ -34,7 +41,8 @@ main{
                 // margin-left: -150px;
                 // margin-top: -220px;
             }
-            &__title{
+
+            &__title {
                 width: 40rem;
                 margin: 20px 0px;
                 font-weight: 600;
@@ -42,15 +50,17 @@ main{
                 line-height: 58px;
                 color: var.$secondary-color;
             }
-            &__text{
+
+            &__text {
                 width: 33rem;
                 margin: 25px 0px;
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 22px; 
+                line-height: 22px;
                 color: var.$secondary-color;
             }
-            &__button{
+
+            &__button {
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 22px;
@@ -60,11 +70,13 @@ main{
                 color: var.$secondary-color;
             }
         }
-        &__globus{
+
+        &__globus {
             width: 50%;
             padding: 7rem 0rem;
             height: 45rem;
-            img{
+
+            img {
                 position: absolute;
                 width: 514.82px;
                 height: 657.4px;
@@ -72,7 +84,8 @@ main{
                 top: 0px;
                 margin-left: 185px;
             }
-            .canvas{
+
+            .canvas {
                 width: 500px;
                 height: 500px;
                 margin-top: -50px;
@@ -81,41 +94,48 @@ main{
             }
         }
     }
-    .section2{
+
+    .section2 {
         display: flex;
         height: 600px;
         color: var.$secondary-color;
-        &__group1{
+
+        &__group1 {
             width: 50%;
             height: 100%;
             padding: 50px 30px;
             font-family: Futura PT;
             font-style: normal;
             color: rgba(255, 255, 255, 0.8);
-            &__title{
+
+            &__title {
                 margin: 20px 0px;
                 font-weight: 600;
                 font-size: 50px;
                 line-height: 64px;
             }
-            &__text{
+
+            &__text {
                 width: 630px;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 140%;
             }
         }
-        &__group2{
+
+        &__group2 {
             width: 50%;
             height: 100%;
             display: grid;
             grid-template-columns: auto auto;
             gap: 10px;
             padding: 100px;
-            &__box{
+
+            &__box {
                 text-align: center;
                 padding: 50px 10px;
-                h4{
+
+                h4 {
                     font-weight: 900;
                     font-size: 50px;
                     line-height: 100%;
@@ -124,7 +144,8 @@ main{
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
                 }
-                p{
+
+                p {
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 26px;
@@ -132,20 +153,23 @@ main{
             }
         }
     }
-    .section3{
+
+    .section3 {
         height: 750px;
         text-align: center;
         padding: 20px;
         color: var.$secondary-color;
         font-style: normal;
         background-image: url('../../images/home/back_lines.svg');
-        h2{
+
+        h2 {
             font-family: Proxima Nova;
             font-weight: 700;
             font-size: 36px;
             line-height: 44px;
         }
-        &__cards{
+
+        &__cards {
             display: grid;
             grid-template-columns: auto auto auto;
             gap: 10px;
@@ -153,16 +177,18 @@ main{
 
             /* Here are the styles of the card classes added via javascript */
 
-            .card{
+            .card {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
                 justify-content: center;
                 padding: 30.83px;
                 border-radius: 20px;
-                background: var.$bg-secondary-color;
+                background-color: rgba(17, 19, 23, 0.5);
+                backdrop-filter: blur(2.5px);
                 border: 1px solid #4e4e4ecf;
                 backdrop-filter: blur(2.5px);
+
                 .line {
                     width: 50px;
                     height: 3px;
@@ -170,19 +196,22 @@ main{
                     border-radius: 20px;
                     margin-bottom: 15px;
                 }
+
                 img {
                     margin-bottom: 35.83px;
                     width: auto;
                 }
+
                 h6 {
-    
+
                     font-weight: 700;
                     font-size: 24px;
                     line-height: 29px;
                     margin-bottom: 10px;
                 }
+
                 p {
-    
+
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;
@@ -191,6 +220,126 @@ main{
         }
     }
 }
+
+.newsCarousel {
+    .news-title {
+        text-align: center;
+        font-family: Proxima Nova;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 44px;
+        color: var.$secondary-color;
+    }
+
+    .slide-container {
+        max-width: 1400px;
+        width: 100%;
+        padding:36px 0;
+    }
+
+    .slide-content {
+        margin: 0 40px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .card {
+        border-radius: 20px;
+        border: 1px solid var.$border-color;
+        background: var.$carousel-bg-color;
+        backdrop-filter: blur(1px);
+
+
+        &-image {
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+
+            img {
+                width: 100%;
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+
+        &-content {
+            padding: 20px 30px 24px 30px;
+        }
+
+        &-bottom {
+            width: 100%;
+            @include mixin.flex-box(row, space-between, center);
+            background-color: transparent;
+            color: var.$secondary-color;
+            ;
+        }
+    }
+
+    .name {
+        font-family: Proxima Nova;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: var.$secondary-color;
+    }
+
+    .description {
+        font-family: Gilroy;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 19px;
+
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 21px;
+    }
+
+    .swiper-navBtn {
+        color: #6E93f7;
+        transition: color 0.3s ease;
+        width: 70px;
+        height: 70px;
+        background: rgba(68, 68, 68, 0.7);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+
+    .swiper-navBtn:hover {
+        color: #4070F4;
+    }
+
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+        font-size: 35px;
+    }
+
+    .swiper-button-next {
+        right: 0px;
+    }
+
+    .swiper-button-prev {
+        left: 0px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #6E93f7;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #4070F4;
+    }
+
+    @media screen and (max-width: 768px) {
+        .slide-content {
+            margin: 0 10px;
+        }
+
+        .swiper-navBtn {
+            display: none;
+        }
+    }
+}
+
+// .teamCarousel {}
+
 
 
 // @media only screen and (max-width: 450px) {

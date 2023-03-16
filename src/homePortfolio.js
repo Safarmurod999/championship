@@ -264,7 +264,7 @@ let arr2 = [
   tabObj5.slice(6),
 ];
 
-function getCard(img, title) {
+function getCard2(img, title) {
   return `<div class="showPanel__card">
       <img src="${img}" alt="">
       <span>${title}</span>
@@ -276,18 +276,23 @@ function getCard(img, title) {
 }
 
 function renderCardHome(obj) {
-    for (const el of obj) {
-        section2.innerHTML += getCard(el.img, el.title);
-      }
+  for (const el of obj) {
+    section2.innerHTML += getCard2(el.img, el.title);
+  }
 }
 
 renderCardHome(arr2[0]);
+
+const tabBtn2 = document.querySelectorAll(".tabBtn li");
+tabBtn2[0].style.background =
+  "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
+
 function showTabHome(index) {
-  tabBtn.forEach((el) => {
+  tabBtn2.forEach((el) => {
     el.style.background = "transparent";
   });
   section2.innerHTML = "";
-  tabBtn[index].style.background =
+  tabBtn2[index].style.background =
     "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
-  renderCardPrf(arr2[index]);
+  renderCardHome(arr2[index]);
 }
