@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+<body>
+    <header>
+        <nav
+          id="navbar"
+          class="navbar"
+          w3-include-html="nav.html"
+        ></nav>
+      </header>
+      <main>
+            <div class="container">
+                <!-- The first section on the home page -->
+                <section class="section1">
+                    <div class="section1__hero">
+                        <h1 class="section1__hero__title">
+                            Biz veb-saytlar,  ilovalarni 
+                            ishlab chiqamiz
+                        </h1>
+                        <p class="section1__hero__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <button class="section1__hero__button">Портфолио </button>
+                        <img src="./images/home/home-bg-elipse1.png" alt="image">
+                    </div>
+                    <div class="section1__globus">
+                        <canvas class="canvas"
+                            id="cobe"
+                            width="1000"
+                            height="1000"
+                            ></canvas>
+                    </div>
+                </section>
+                <section class="section2">
+                    
+                </section>
+                <section class="section3">
+
+                </section>
+            </div> 
+      </main>
+<footer id="footer" class="footer" w3-include-html="footer.html">
+
+</footer>
+  <script type="module" src="main.js"></script>
+  <script type="module">
+    /* home page section1 globus */
+
+import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+let phi = 0
+let canvas = document.getElementById("cobe")
+
+const globe = createGlobe(canvas, {
+        devicePixelRatio: 2,
+        width: 1000,
+        height: 1000,
+        phi: 0,
+        theta: 0,
+        dark: 0,
+        diffuse: 1.2,
+        scale: 1,
+        mapSamples: 16000,
+        mapBrightness: 6,
+        baseColor: [1, 1, 1],
+        markerColor: [1, 0.5, 1],
+        glowColor: [1, 1, 1],
+        offset: [0, 0],
+        markers: [
+{ location: [37.7595, -122.4367], size: 0.03 },
+{ location: [40.7128, -74.006], size: 0.1 },
+],
+onRender: (state) => {
+// Called on every animation frame.
+// state will be an empty object, return updated params.
+state.phi = phi
+phi += 0.01
+},
+})
+  </script>
+  
+
+
+</body>
+</html>
