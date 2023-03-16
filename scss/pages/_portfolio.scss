@@ -20,22 +20,19 @@
     border: 1px solid var.$border-color;
     border-radius: 90px;
     width: auto;
-
-    li {
-      display: inline-block;
-      border-radius: 30px;
-      transition-timing-function: ease;
-
-      &:hover {
-        background: var.$tab-color;
-      }
-
-      button {
-        color: var.$secondary-color;
-        padding: 16px 50px;
-        border-radius: 90px;
-        outline: none;
-      }
+    li{
+        display: inline-block;
+        border-radius: 30px;
+        transition-timing-function: ease;
+        &:hover{
+            background: var.$tab-color;
+        }
+        button{
+            color: var.$secondary-color;
+            padding: 16px 50px;
+            border-radius: 90px;
+            outline: none;
+        }
     }
   }
 

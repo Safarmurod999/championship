@@ -310,7 +310,7 @@ input:checked + .slider:before {
   background-color: #fff;
   width: 121px;
   height: 37px;
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.87);
   border-radius: 10px;
 }
 .showPanel__card-hover {
@@ -319,9 +319,9 @@ input:checked + .slider:before {
   top: 15px;
   left: 15px;
   background: rgba(0, 0, 0, 0.87);
-  border-radius: 5px;
+  border-radius: 10px;
   width: 93%;
-  height: 91%;
+  height: 90.5%;
 }
 .showPanel__card-hover img {
   position: absolute;

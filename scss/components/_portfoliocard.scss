@@ -1,3 +1,6 @@
+@use "../abstract/variables" as var;
+
+
 .showPanel__card {
   position: relative;
   width: 403px;
@@ -11,10 +14,10 @@
     display: inline-block;
     padding: 9px;
     text-align: center;
-    background-color: #fff;
+    background-color: var.$secondary-color;
     width: 121px;
     height: 37px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 14px var.$shadow-color;
     border-radius: 10px;
   }
   &-hover {
@@ -22,10 +25,10 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    background: rgba(0, 0, 0, 0.87);
-    border-radius: 5px;
+    background: var.$shadow-color;
+    border-radius: 10px;
     width: 93%;
-    height: 91%;
+    height: 90.5%;
     img {
       position: absolute;
       top: 0;
@@ -36,7 +39,7 @@
       position: absolute;
       bottom: 30px;
       left: 30px;
-      color: #fff;
+      color: var.$secondary-color;
       font-weight: 700;
       font-size: 1.25rem;
       line-height: 1.5rem;
