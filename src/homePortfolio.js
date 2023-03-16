@@ -256,49 +256,32 @@ let tabObj5 = [
   },
 ];
 
-let arr = [tabObj1, tabObj2, tabObj3, tabObj4, tabObj5];
-let arr2 = [tabObj1.slice(6)];
-console.log(arr2);
+let arr2 = [
+  tabObj1.slice(6),
+  tabObj2.slice(6),
+  tabObj3.slice(6),
+  tabObj4.slice(6),
+  tabObj5.slice(6),
+];
+
 function getCard(img, title) {
   return `<div class="showPanel__card">
-    <img src="${img}" alt="">
-    <span>${title}</span>
-    <div class="showPanel__card-hover">
-      <img src="./images/portfolio/arrow.svg" alt="">
-      <p>UYMAKON ${title}</p>
-    </div>
-  </div>`;
-}
-
-function renderCardPrf(obj) {
-  for (const el of obj) {
-    section.innerHTML += getCard(el.img, el.title);
-  }
+      <img src="${img}" alt="">
+      <span>${title}</span>
+      <div class="showPanel__card-hover">
+        <img src="./images/portfolio/arrow.svg" alt="">
+        <p>UYMAKON ${title}</p>
+      </div>
+    </div>`;
 }
 
 function renderCardHome(obj) {
-  for (let i = 0; i < 6; i++) {
-    section2.innerHTML += getCard(i.img, i.title);
-  }
+    for (const el of obj) {
+        section2.innerHTML += getCard(el.img, el.title);
+      }
 }
 
-renderCardPrf(arr[0]);
-renderCardHome(arr[0]);
-
-const tabBtn = document.querySelectorAll(".tabBtn li");
-tabBtn[0].style.background =
-  "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
-
-function showTab(index) {
-  tabBtn.forEach((el) => {
-    el.style.background = "transparent";
-  });
-  section.innerHTML = "";
-  tabBtn[index].style.background =
-    "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
-  renderCardPrf(arr[index]);
-}
-
+renderCardHome(arr2[0]);
 function showTabHome(index) {
   tabBtn.forEach((el) => {
     el.style.background = "transparent";
@@ -306,5 +289,5 @@ function showTabHome(index) {
   section2.innerHTML = "";
   tabBtn[index].style.background =
     "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
-  renderCardHome(arr[index]);
+  renderCardPrf(arr2[index]);
 }
