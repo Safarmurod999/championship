@@ -1,5 +1,5 @@
  @use "../abstract/variables" as var;
- @use "../abstract/mixin" as var;
+ @use "../abstract/mixin" as mixin ;
 
 
   footer{
@@ -13,7 +13,7 @@
     &.__container{
         width: 100%;
         display: flex;
-        @include mixon.flex-box(row, space-between, center)  
+        @include mixin.flex-box(row, space-between, center)  
     }
     &__logo{
         &__logo-img{
@@ -23,7 +23,7 @@
      
     }
     &__title{
-        @include mixon.flex-box(row, space-between, center) ; 
+        @include mixin.flex-box(row, space-between, center) ; 
         &__title-img{
         width:17px;
         height: 17px;
@@ -42,7 +42,7 @@
     }
     &__telephone{
         
-        @include mixon.flex-box(row, space-between, center) ; 
+        @include mixin.flex-box(row, space-between, center) ; 
         &__telephone-img{
             width: 17px;
             height: 17px;
@@ -61,7 +61,7 @@
     }
     &__img{
         
-        @include mixon.flex-box(row, space-between, center) ; 
+        @include mixin.flex-box(row, space-between, center) ; 
         img{
             width: 17px;
             height: 17px;
