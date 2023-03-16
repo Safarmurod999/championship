@@ -3,13 +3,20 @@
 
 
 /* section1 pages scss */
-
+main{
+    background-color: var.$bg-main-color;
+}
+.style{
+    background: url('../../images/home/bg-noice.svg');
+}
 .container{
     .section1{
         display: flex;
         background: url('../../images/home/home-bg-vectors.png');
         background-repeat: no-repeat;
         padding: 0px 5px;
+        margin-top: 10px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         &__hero{
             width: 50%;
             padding: 7rem 0rem;
@@ -30,7 +37,7 @@
                 font-weight: 600;
                 font-size: 48px;
                 line-height: 58px;
-                // color: var.$secondary-color;
+                color: var.$secondary-color;
             }
             &__text{
                 width: 33rem;
@@ -38,7 +45,7 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 22px; 
-                // color: var.$secondary-color;
+                color: var.$secondary-color;
             }
             &__button{
                 font-weight: 700;
@@ -47,7 +54,7 @@
                 text-align: center;
                 margin: 20px;
                 margin-top: 28%;
-                // color: #929292;
+                color: var.$secondary-color;
             }
         }
         &__globus{
@@ -56,7 +63,7 @@
             height: 45rem;
             background: url('../../images/home/home-bg-elipse2.png');
             background-repeat: no-repeat;
-            background-position-x: 5rem;
+            background-position-x: 20rem;
             background-position-y: -5rem;
             .canvas{
                 width: 500px;
@@ -69,5 +76,108 @@
     }
     .section2{
         display: flex;
+        height: 600px;
+        color: var.$secondary-color;
+        &__group1{
+            width: 50%;
+            height: 100%;
+            padding: 50px 30px;
+            font-family: Futura PT;
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.8);
+            &__title{
+                margin: 20px 0px;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 64px;
+            }
+            &__text{
+                width: 630px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+            }
+        }
+        &__group2{
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            padding: 100px;
+            &__box{
+                text-align: center;
+                padding: 50px 10px;
+                h4{
+                    font-weight: 900;
+                    font-size: 50px;
+                    line-height: 100%;
+                    background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    .section3{
+        height: 750px;
+        text-align: center;
+        padding: 20px;
+        color: var.$secondary-color;
+        font-style: normal;
+        background-image: url('../../images/home/back_lines.svg');
+        h2{
+            font-family: Proxima Nova;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &__cards{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            padding: 30px 5px;
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                padding: 30.83px;
+                border-radius: 20px;
+                background: var.$bg-secondary-color;
+                border: 1px solid #4e4e4ecf;
+                backdrop-filter: blur(2.5px);
+                .line {
+                    width: 50px;
+                    height: 3px;
+                    background: #686464;
+                    border-radius: 20px;
+                    margin-bottom: 15px;
+                }
+                img {
+                    margin-bottom: 35.83px;
+                    width: auto;
+                }
+                h6 {
+    
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 10px;
+                }
+                p {
+    
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
     }
 }
