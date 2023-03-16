@@ -1,11 +1,6 @@
 @use "../abstract/variables" as var;
 @use "../abstract/mixin" as mixin;
 
-.navbar .container .navbar__container * {
-    margin: 0;
-    padding: 0;
-}
-
 // Navbar begins
 
 .navbar {
@@ -23,20 +18,22 @@
     }
 
     &__logo {
+        height: 50px;
         img {
             width: 72px;
             height: 50px;
-        }
+       }
     }
 
     &__menus {
         @include mixin.flex-box(row, space-between, center);
-        gap: 207px;
+        flex-grow: 1;
     }
 
     &__list {
+
+        margin-left: 152px;
         @include mixin.flex-box(row, space-between, center);
-        gap: 16px;
         margin-bottom: 0;
     }
 
@@ -51,6 +48,16 @@
         &:hover {
             color: var.$btn-color;
         }
+      
+    }
+    &__item:nth-child(0){
+        margin-right: 16px;
+    }
+    &__item :nth-child(1){
+        margin-right: 14px;
+    }
+    &:nth-child(2){
+        margin-right: 18px;
     }
 
     &__right {

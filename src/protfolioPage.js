@@ -300,6 +300,7 @@ function showTab(index) {
   renderCardPrf(arr[index]);
 }
 
+
 function showTabHome(index) {
   tabBtn.forEach((el) => {
     el.style.background = "transparent";
