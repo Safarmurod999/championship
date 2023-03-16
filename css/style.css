@@ -11,6 +11,7 @@ ul {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 input, select {
@@ -19,6 +20,7 @@ input, select {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 main {
