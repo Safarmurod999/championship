@@ -259,10 +259,10 @@ let tabObj5 = [
 let arr = [tabObj1, tabObj2, tabObj3, tabObj4, tabObj5];
 function getCard(img, title) {
   return `<div class="showPanel__card">
-    <img src="${img}" alt="">
+    <img src="${img}" alt="${title}">
     <span>${title}</span>
     <div class="showPanel__card-hover">
-      <img src="./images/portfolio/arrow.svg" alt="">
+      <img src="./images/portfolio/arrow.svg" alt="arrow">
       <p>UYMAKON ${title}</p>
     </div>
   </div>`;

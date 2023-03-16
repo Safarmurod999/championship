@@ -3,8 +3,8 @@
 @use "../components/portfoliocard";
 
 .main {
-  font-family: Nunito Sans;
-  background-color: transparent;
+  font-family: Proxima Nova;
+  background-color: var.$bg-main-color;
   padding-top: 80px;
   @include mixin.flex-box(row, start, center);
   width: auto;
@@ -12,6 +12,9 @@
 
   h1 {
     color: var.$secondary-color;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
   }
 
   ul {
@@ -20,33 +23,132 @@
     border: 1px solid var.$border-color;
     border-radius: 90px;
     width: auto;
-    li{
-        display: inline-block;
-        border-radius: 30px;
-        transition-timing-function: ease;
-        &:hover{
-            background: var.$tab-color;
-        }
-        button{
-            color: var.$secondary-color;
-            padding: 16px 50px;
-            border-radius: 90px;
-            outline: none;
-        }
+    li {
+      display: inline-block;
+      border-radius: 30px;
+      transition-timing-function: ease;
+      &:hover {
+        background: var.$tab-color;
+      }
+      button {
+        color: var.$secondary-color;
+        padding: 16px 50px;
+        border-radius: 90px;
+        outline: none;
+      }
+    }
+
+    a {
+      margin-top: 40px;
     }
   }
 
-  .showPanel,.showPanel2 {
-    padding: 40px 0;
+  .showPanel,
+  .showPanel2 {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
   }
 }
 
+.form {
+  font-family: Proxima Nova;
+  margin-top: 120px;
+  @include mixin.flex-box(row, space-between, center);
+  background: var.$carousel-bg-color;
+  border: 1px solid var.$border-color;
+  color: var.$secondary-color;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  padding: 60px 80px;
+  &__left {
+    h3 {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 2.44rem;
+      margin-bottom: 40px;
+    }
+    input {
+      width: 75%;
+      display: block;
+      background: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid var.$gray;
+      padding: 8px 0px;
+      margin-top: 17px;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 1.06rem;
+        line-height: 1.31rem;
+      }
+      &:valid {
+        color: var.$secondary-color;
+        font-weight: 400;
+        font-size: 1.06rem;
+        line-height: 1.31rem;
+      }
+    }
+  }
+  h4 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.81rem;
+  }
+  &__checkbox {
+    margin-top: 4px;
+    width: 95%;
+    @include mixin.flex-box(row, space-between, start);
+    &-box {
+      @include mixin.flex-box(row, start, start);
+      gap: 10px;
+      margin-top: 30px;
+      input[type="checkbox"] {
+        background: transparent;
+          color: var.$bg-main-color;
+        border: 1px solid var.$gray;
+        border-radius: 4px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        margin-top: 4px;
+      }
+      label {
+        font-weight: 600;
+        font-size: 1.13rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+  &__drinks {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: var.$form-drink-bg;
+    box-shadow: 20px 20px 40px var.$form-drink-shedow;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 40px 60px;
+    gap: 66px;
+    input {
+      display: none;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1.81rem;
+      margin-top: 10px;
+    }
+  }
+}
+
 // Start Media=992
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .main {
     .showPanel {
       grid-template-columns: auto auto;
@@ -57,7 +159,7 @@
 // End Media=992
 
 // Start Media=767
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .main {
     ul {
       display: grid;
