@@ -23,90 +23,107 @@
     <nav id="navbar" class="navbar bg-body-tertiary fixed-top navbar-expand-xl" w3-include-html="nav.html"></nav>
   </header>
   <main>
-    <div class="container style">
-      <!-- The first section on the home page -->
-      <section class="section1">
-        <div class="section1__hero">
-          <h1 class="section1__hero__title">
-            Biz veb-saytlar, ilovalarni
-            ishlab chiqamiz
-          </h1>
-          <p class="section1__hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam.
-          </p>
-          <button class="section1__hero__button">Портфолио </button>
-          <img src="./images/home/home-bg-elipse1.png" alt="image">
-        </div>
-        <div class="section1__globus">
-          <img src="./images/home/home-bg-elipse2.png" alt="">
-          <canvas class="canvas" id="cobe" width="1000" height="1000"></canvas>
-        </div>
-      </section>
-
-      <!-- The second section on the home page -->
-
-      <section class="section2">
-        <div class="section2__group1">
-          <h2 class="section2__group1__title">Kompaniya haqida</h2>
-          <p class="section2__group1__text">Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
-            echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan
-            va sifatli mahsulotni taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali veb-dizayn, ishlab chiqish
-            va marketing mutaxassislaridan iborat.
-            <br><br>
-            Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO optimallashtirish, kontent yaratish va
-            reklama kampaniyalarini o'z ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz eng yangi
-            texnologiyalar va innovatsion usullardan foydalangan holda brendni rivojlantirish va sotishni ko'paytirish
-            bilan shug'ullanamiz.
-          </p>
-        </div>
-        <div class="section2__group2">
-          <div class="section2__group2__box">
-            <h4>20+</h4>
-            <p>Проектов запустил</p>
-          </div>
-          <div class="section2__group2__box">
-            <h4>4 года</h4>
-            <p>Опыта разработки</p>
-          </div>
-          <div class="section2__group2__box">
-            <h4>12+</h4>
-            <p>Профессионалов</p>
-          </div>
-          <div class="section2__group2__box">
-            <h4>4 года</h4>
-            <p>Опыта разработки</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- The third section on the home page -->
-
-      <section class="section3">
-        <h2>Bizning afzalliklarimiz</h2>
-        <div class="section3__cards" id="card">
-
-        </div>
-      </section>
-      <section class="main">
-        <div class="container">
-          <h1>Bajargan loyihalarimiz</h1>
-          <div class="wrap">
-            <ul class="tabBtn">
-              <li><button onclick="showTabHome(0)">Barchasi</button></li>
-              <li><button onclick="showTabHome(1)">Veb sayt</button></li>
-              <li><button onclick="showTabHome(2)">Veb dizayn</button></li>
-              <li><button onclick="showTabHome(3)">SMM</button></li>
-              <li><button onclick="showTabHome(4)">Mobil ilova</button></li>
-            </ul>
-            <div class="showPanel2">
+    <section class="first-section">
+      <section>
+        <div class="container style">
+          <div class="section1">
+            <div class="section1__hero">
+              <h1 class="section1__hero__title">
+                Biz veb-saytlar, ilovalarni
+                ishlab chiqamiz
+              </h1>
+              <p class="section1__hero__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+              <button class="section1__hero__button">Портфолио </button>
+              <img src="./images/home/home-bg-elipse1.png" alt="image">
+            </div>
+            <div class="section1__globus">
+              <img src="./images/home/home-bg-elipse2.png" alt="image">
+              <canvas class="canvas" id="cobe" width="1000" height="1000"></canvas>
             </div>
           </div>
         </div>
       </section>
+    </section>
+
+    <!-- The second section on the home page -->
+
+    <section class="second-section">
+      <div class="container style">
+        <h2 class="section2__group1__title">Kompaniya haqida</h2>
+        <div class="section2">
+          <div class="section2__group1">
+            <p class="section2__group1__text">Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
+              echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik. Bizning jamoamiz mijozlarga
+              moslashtirilgan va sifatli mahsulotni taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali
+              veb-dizayn, ishlab chiqish va marketing mutaxassislaridan iborat.
+            </p>
+            <p class="section2__group1__text"> Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO optimallashtirish, kontent yaratish va
+              reklama kampaniyalarini o'z ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz eng yangi
+              texnologiyalar va innovatsion usullardan foydalangan holda brendni rivojlantirish va sotishni ko'paytirish
+              bilan shug'ullanamiz.</p>
+          </div>
+          <div class="section2__group2">
+            <div class="section2__group2__boxs">
+              <div class="section2__group2__boxs__itemb">
+                <h4>20+</h4>
+                <p>Проектов запустил</p>
+              </div>
+              <div class="section2__group2__boxs__itemb">
+                <h4>4 года</h4>
+                <p>Опыта разработки</p>
+              </div>
+              <div class="section2__group2__boxs__itemb">
+                <h4>12+</h4>
+                <p>Профессионалов</p>
+              </div>
+              <div class="section2__group2__boxs__itemb">
+                <h4>4 года</h4>
+                <p>Опыта разработки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The third section on the home page -->
+
+    <section class="third-section">
+      <section class="inner">
+        <div class="container style">
+          <div class="section3">
+            <h2>Bizning afzalliklarimiz</h2>
+            <div class="section3__cards" id="card">
+
+            </div>
+          </div>
+        </div>
+        <section class="main">
+          <div class="container">
+            <h1>Bajargan loyihalarimiz</h1>
+            <div class="wrap">
+              <ul class="tabBtn">
+                <li><button onclick="showTabHome(0)">Barchasi</button></li>
+                <li><button onclick="showTabHome(1)">Veb sayt</button></li>
+                <li><button onclick="showTabHome(2)">Veb dizayn</button></li>
+                <li><button onclick="showTabHome(3)">SMM</button></li>
+                <li><button onclick="showTabHome(4)">Mobil ilova</button></li>
+              </ul>
+              <div class="showPanel2">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
     </div>
     <section class="newsCarousel">
-      <h2 class="news-title">Blog yangiliklarimiz</h2>
+      <div class="container relativer">
+        <h2 class="news-title">Blog yangiliklarimiz</h2>
       <div class="slide-container swiper">
         <div class="slide-content">
           <div class="card-wrapper swiper-wrapper">
@@ -188,88 +205,105 @@
         <div class="swiper-button-prev swiper-navBtn"></div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
+      </div>
     </section>
     <section class="teamCarousel">
-      <div class="slide-container swiper">
-        <div class="slide-content2">
-          <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/home/carousel-1.png" alt="QA mutaxassis">
-              </div>
-              <div class="card-content">
-                <h2 class="name">«QA» mutaxassisi qanday bo'lishi kerak?</h2>
-                <p class="description">🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni
-                  testlash» kursi ham qo'shilgan. </p>
-                <div class="card-bottom">
-                  <p>#hi_tech</p>
-                  <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+      <div class="container relative">
+        <div class="slide-container swiper">
+          <div class="slide-content2">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="images/home/carousel-1.png" alt="QA mutaxassis">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">«QA» mutaxassisi qanday bo'lishi kerak?</h2>
+                  <p class="description">🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni
+                    testlash» kursi ham qo'shilgan. </p>
+                  <div class="card-bottom">
+                    <p>#hi_tech</p>
+                    <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/home/carousel-2.png" alt="QA mutaxassis">
-              </div>
-              <div class="card-content">
-                <h2 class="name">«Najot Ta'lim» logosi haqida nimalarni bilasiz?</h2>
-                <p class="description">«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi
-                  logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.</p>
-                <div class="card-bottom">
-                  <p>#hi_tech</p>
-                  <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="images/home/carousel-2.png" alt="QA mutaxassis">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">«Najot Ta'lim» logosi haqida nimalarni bilasiz?</h2>
+                  <p class="description">«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi
+                    logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.</p>
+                  <div class="card-bottom">
+                    <p>#hi_tech</p>
+                    <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/home/carousel-3.png" alt="QA mutaxassis">
-              </div>
-              <div class="card-content">
-                <h2 class="name">🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!
-                </h2>
-                <p class="description">Intervyuda sizning oʻz sohangizdagi boʻshliqlaringiz, kamchiliklaringiz
-                  aniqlanib...</p>
-                <div class="card-bottom">
-                  <p>#hi_tech</p>
-                  <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="images/home/carousel-3.png" alt="QA mutaxassis">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!
+                  </h2>
+                  <p class="description">Intervyuda sizning oʻz sohangizdagi boʻshliqlaringiz, kamchiliklaringiz
+                    aniqlanib...</p>
+                  <div class="card-bottom">
+                    <p>#hi_tech</p>
+                    <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/home/carousel-2.png" alt="QA mutaxassis">
-              </div>
-              <div class="card-content">
-                <h2 class="name">«Najot Ta'lim» logosi haqida nimalarni bilasiz?</h2>
-                <p class="description">«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi
-                  logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.</p>
-                <div class="card-bottom">
-                  <p>#hi_tech</p>
-                  <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="images/home/carousel-2.png" alt="QA mutaxassis">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">«Najot Ta'lim» logosi haqida nimalarni bilasiz?</h2>
+                  <p class="description">«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi
+                    logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.</p>
+                  <div class="card-bottom">
+                    <p>#hi_tech</p>
+                    <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/home/carousel-1.png" alt="QA mutaxassis">
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="images/home/carousel-1.png" alt="QA mutaxassis">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">«QA» mutaxassisi qanday bo'lishi kerak?</h2>
+                  <p class="description">🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni
+                    testlash» kursi ham qo'shilgan. </p>
+                  <div class="card-bottom">
+                    <p>#hi_tech</p>
+                    <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+                  </div>
+                </div>
               </div>
-              <div class="card-content">
-                <h2 class="name">«QA» mutaxassisi qanday bo'lishi kerak?</h2>
-                <p class="description">🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni
-                  testlash» kursi ham qo'shilgan. </p>
-                <div class="card-bottom">
-                  <p>#hi_tech</p>
-                  <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+              <div class="card swiper-slide">
+                <div class="card-image">
+                  <img src="images/home/carousel-2.png" alt="QA mutaxassis">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">«Najot Ta'lim» logosi haqida nimalarni bilasiz?</h2>
+                  <p class="description">«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi
+                    logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.</p>
+                  <div class="card-bottom">
+                    <p>#hi_tech</p>
+                    <p><i class="uil uil-calendar-alt"></i>14:45 22/02/23</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+  
+          <div class="swiper-button-next2 swiper-navBtn"></div>
+          <div class="swiper-button-prev2 swiper-navBtn"></div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-
-        <div class="swiper-button-next2 swiper-navBtn"></div>
-        <div class="swiper-button-prev2 swiper-navBtn"></div>
-        <!-- <div class="swiper-pagination"></div> -->
       </div>
     </section>
 
