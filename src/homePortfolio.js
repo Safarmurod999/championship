@@ -296,3 +296,5 @@ function showTabHome(index) {
     "linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%)";
   renderCardHome(arr2[index]);
 }
+
+export default showTabHome;

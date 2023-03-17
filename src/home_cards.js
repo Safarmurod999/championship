@@ -1,4 +1,6 @@
-let sectionCard = document.getElementById("card");
+import get from "../src/getElement.js";
+
+let sectionCard = get("#card");
 
 let obj = [
     {
@@ -44,6 +46,10 @@ function getCard(img, title, content) {
 </div>`;
 }
 
-for (const el of obj) {
-    sectionCard.innerHTML += getCard(el.img, el.title, el.content);
+function renderRow(){
+    for (const el of obj) {
+        sectionCard.innerHTML += getCard(el.img, el.title, el.content);
+    }
 }
+
+export default renderRow;
