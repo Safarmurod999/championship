@@ -383,7 +383,7 @@ section {
 .container .section1__hero img {
   position: relative;
   width: 170%;
-  height: 110%;
+  height: 170%;
   z-index: 0;
   margin-left: -3%;
   margin-top: -70%;
@@ -669,7 +669,7 @@ section {
 }
 
 /* Responsive phone */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 669px) {
   .container {
     max-width: 100%;
   }

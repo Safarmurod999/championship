@@ -33,7 +33,7 @@ section{
             img{
                 position: relative;
                 width: 170%;
-                height: 110%;
+                height: 170%;
                 z-index: 0; 
 //<<<<<<< HEAD
                 margin-left: -3%;
@@ -365,7 +365,7 @@ section{
 /* Responsive phone */
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 669px) {
     .container{
         max-width: 100%;
         main{
