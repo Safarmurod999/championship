@@ -1,95 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
-ul{
+
+ul {
     padding: 0 !important;
-    list-style-type: none;
+    list-style-type: none
 }
-button{
+
+button {
     border: none;
     background-color: transparent;
-    cursor: pointer;
+    cursor: pointer
 }
-input,select{
-    outline: none;
+
+input,
+select {
+    outline: none
 }
-a{
+
+a {
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
-main{
+main {
     padding-top: 80px;
-    overflow: hidden;
+    overflow: hidden
 }
 
-
-.post-meta {
-    font-size: 1rem;
-    font-style: italic;
-    display: block;
-    margin-bottom: 4vh;
-    color: var(--secondary-color);
-}
-
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-
-    em {
-        margin-left: 10px;
-        font-size: 1rem;
-    }
-}
-
-.theme-switch {
-    display: inline-block;
-    position: relative;
-}
-
-.theme-switch input {
-    display: none;
-}
-.form-switch{
-    margin: 0 !important;
-    padding: 0 !important;
-}
-.slider {
-    background-color: transparent;
-    width: 93px;
-    height: 40px;
+#backtop {
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    padding: 10px;
     cursor: pointer;
-    transition: .4s;
-    border: 1px solid #AAAAAA;
-    border-radius: 40px;
-}
-
-.slider:before {
-    background-color: #5454D4;
-    content: url('../../images/nav/sun.svg');
-    padding-top: 2px;
-    padding-left: 3px;
-    width: 36px;
-    height: 36px;   
-    top: 1px;
-    position: absolute;
-    transition: .4s;
-}
-
-input:checked+.slider:before {
-    content: url('../../images/nav/moon.svg');
-}
-
-input:checked+.slider:before {
-    transform: translateX(54px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
     border-radius: 50%;
+    background-color: #6911ad;
+    opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+#backtop img {
+    width: 30px;
+    height: 30px
 }

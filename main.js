@@ -1,4 +1,6 @@
 import includeHTML from "./src/includeHTML.js";
+import shrink from "./src/navShrink.js";
+import toggleBacktop from "./src/backTop.js";
 import renderRow from "./src/home_cards.js";
 import swiper from "./src/newsCarousel.js";
 import swiper2 from "./src/teamCarousel.js";
@@ -38,3 +40,13 @@ renderRow();
 // phi += 0.01
 // },
 // })
+const lightMode=document.getElementById('light-mode');
+console.log(lightMode);
+window.addEventListener("scroll", function () {
+  toggleBacktop();
+});
+
+window.addEventListener("scroll", function () {
+    shrink();
+  });
+  

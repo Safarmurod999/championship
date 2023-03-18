@@ -1,13 +1,68 @@
-@use "../abstract/variables" as var;
+// @use "../abstract/variables" as var;
 
+
+// .showPanel__card {
+//   position: relative;
+//   width: 100%;
+//   transition: .3s;
+//   img {
+//     width: 100%;
+//   }
+//   span {
+//     position: absolute;
+//     top: 15px;
+//     right: 15px;
+//     display: inline-block;
+//     padding: 9px;
+//     text-align: center;
+//     background-color: var.$secondary-color;
+//     width: 121px;
+//     height: 37px;
+//     box-shadow: 4px 4px 14px var.$shadow-color;
+//     border-radius: 10px;
+//   }
+//   &-hover {
+//     display: none;
+//     position: absolute;
+//     top: 15px;
+//     left: 15px;
+//     background: var.$shadow-color;
+//     border-radius: 10px;
+//     width: 93%;
+//     height: 90.5%;
+//     img {
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       width: auto;
+//     }
+//     p {
+//       position: absolute;
+//       bottom: 30px;
+//       left: 30px;
+//       color: var.$secondary-color;
+//       font-weight: 700;
+//       font-size: 1.25rem;
+//       line-height: 1.5rem;
+//     }
+//   }
+//   &:hover &-hover {
+//     display: block;
+//   }
+// }
+@use "../abstract/variables" as var;
 
 .showPanel__card {
   position: relative;
   width: 100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
+
   img {
-    width: 100%;
+    width: 100%
   }
+
   span {
     position: absolute;
     top: 15px;
@@ -18,9 +73,11 @@
     background-color: var.$secondary-color;
     width: 121px;
     height: 37px;
+    -webkit-box-shadow: 4px 4px 14px var.$shadow-color;
     box-shadow: 4px 4px 14px var.$shadow-color;
-    border-radius: 10px;
+    border-radius: 10px
   }
+
   &-hover {
     display: none;
     position: absolute;
@@ -30,12 +87,14 @@
     border-radius: 10px;
     width: 93%;
     height: 90.5%;
+
     img {
       position: absolute;
       top: 0;
       right: 0;
-      width: auto;
+      width: auto
     }
+
     p {
       position: absolute;
       bottom: 30px;
@@ -43,10 +102,11 @@
       color: var.$secondary-color;
       font-weight: 700;
       font-size: 1.25rem;
-      line-height: 1.5rem;
+      line-height: 1.5rem
     }
   }
+
   &:hover &-hover {
-    display: block;
+    display: block
   }
 }

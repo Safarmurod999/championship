@@ -1,30 +1,35 @@
-@use "../abstract/variables" as var;
-@use "../abstract/mixin" as mixin;
 
-// Navbar begins
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin; //Navbar begins 
 
 .navbar {
     padding: 15px 0 !important;
     background-color: var.$nav-color !important;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
     .offcanvas {
         background-color: var.$nav-color !important;
-        opacity: 1;
+        opacity: 1
     }
+
     &-toggler {
         border-color: var.$secondary-color;
-        &-icon{
-            background-image:url("../../images/navbar/bars.svg") !important;
+
+        &-icon {
+            background-image: url("../../images/navbar/bars.svg") !important
         }
     }
 
     .btn-close {
         border-radius: 50%;
         padding: 10px;
-        background-color: var.$secondary-color;
+        background-color: var.$secondary-color
     }
 
     p {
-        margin: 0;
+        margin: 0
     }
 
     &-brand {
@@ -32,7 +37,7 @@
 
         img {
             width: 72px;
-            height: 50px;
+            height: 50px
         }
     }
 
@@ -42,28 +47,30 @@
         font-size: 1.25rem;
         line-height: 1.5rem;
         color: var.$secondary-color;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
         transition: .3s;
 
         &:hover {
-            color: var.$btn-color;
+            color: var.$btn-color
         }
-
     }
 
     &-item:nth-child(0) {
-        margin-right: 16px;
+        margin-right: 16px
     }
 
     &-item :nth-child(1) {
-        margin-right: 14px;
+        margin-right: 14px
     }
 
     &-item:nth-child(2) {
-        margin-right: 18px;
+        margin-right: 18px
     }
 
     &__right {
         @include mixin.flex-box(row, center, center);
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         gap: 31px;
 
@@ -73,96 +80,69 @@
             font-family: Proxima Nova;
             font-style: normal;
             font-weight: 700;
-            color: var.$secondary-color;
+            color: var.$secondary-color
         }
 
         &-number {
             font-size: 1.25rem;
             line-height: 1.5rem;
             color: var.$secondary-color;
-            margin-bottom: 3px;
+            margin-bottom: 3px
         }
 
         &-email {
-            font-size: 0.875rem;
-            line-height: 1.0625rem;
+            font-size: .875rem;
+            line-height: 1.0625rem
         }
 
         &-call {
             padding: 12px 21px !important;
             background: var.$btn-color;
-            border-radius: 7px;
+            border-radius: 7px
         }
 
-        .navbar-switch {
-            margin-right: 9px;
+        &-mode {
+            @include mixin.flex-box(row, space-between, center);
+            width: 93px;
+            height: 40px;
+            background: #151a1e;
+            border: 1px solid var.$gray;
+            border-radius: 40px
         }
 
-        // Dark Night switch
-        .navbar-switch {
-            display: inline-block;
-            position: relative;
+        .mode-btn {
+            @include mixin.flex-box(row, center, center);
+            width: 36px;
+            height: 36px;
+            border-radius: 40px;
+            color: var.$gray;
 
-            &-wrapper {
-                display: flex;
-                align-items: center;
-
-                em {
-                    margin-left: 10px;
-                    font-size: 1rem;
-                }
+            i {
+                height: 22px;
+                font-size: 22px;
+                @include mixin.flex-box(row, center, center)
             }
         }
 
-        .navbar-switch input {
-            display: none;
-        }
-
-        .navbar-slider {
-            background-color: transparent;
-            width: 93px;
-            height: 40px;
-            cursor: pointer;
-            transition: .4s;
-            border: 1px solid var.$gray;
-            border-radius: 40px;
-        }
-
-        .navbar-slider:before {
-            background-color: var.$purple;
-            content: url('../../images/navbar/sun.svg');
-            padding-top: 1px;
-            padding-left: 3px;
-            width: 36px;
-            height: 36px;
-            top: 2px;
-            position: absolute;
-            transition: .4s;
-        }
-
-        input:checked+.navbar-slider:before {
-            content: url('../../images/navbar/moon.svg');
-        }
-
-        input:checked+.navbar-slider:before {
-            transform: translateX(52px);
-        }
-
-        .navbar-slider.round {
-            border-radius: 34px;
-        }
-
-        .navbar-slider.round:before {
-            border-radius: 50%;
+        .active {
+            background-color: var.$primary-color;
+            color: var.$secondary-color
         }
     }
 }
 
-@media (max-width : 1200px){
+.navbar-shrink {
+    padding: 12px 0 !important;
+    -webkit-box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, .2);
+    box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, .2)
+}
 
-    .navbar{
-        &-link,&-item{
-            margin: 15px 0 !important;
+@media (max-width :1200px) {
+    .navbar {
+
+        &-link,
+        &-item {
+            margin: 15px 0 !important
         }
     }
 }
