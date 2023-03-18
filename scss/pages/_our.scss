@@ -1,0 +1,100 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin ;
+h3{
+    color:var.$secondary-color;
+}
+p{
+   
+    width: 299px;
+    color: rgba(255, 255, 255, 0.7);  
+    align-items: center;
+
+          
+
+}
+.our{
+    max-width: 1200px;
+    background-color: var.$carousel-bg-color;
+    text-align: center;
+    gap: 24px;
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    &__Text{
+    padding:64px ;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color:var.$secondary-color;
+
+    }
+   
+    &__cards{
+        // padding-left: 30px;
+        margin-top: 40px 168px; 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+        gap: 24px;
+
+        
+    }
+    &__cards-card{
+      
+        text-align: center;
+        width: 384px;
+        height: 300px;
+      
+
+    }
+    &__cards-card-img{
+        width: 69px;
+        height: 69px;
+        margin-bottom: 20px;
+        
+    }
+    &__cards-card-desc{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.750316px;
+        color:var.$secondary-color;
+                                                                                                                                                                                                        
+
+    }
+    &__cards-card-tex{ 
+       width: 299px;
+       font-family: 'Nunito Sans';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 20px;
+       line-height: 28px;
+       text-align: center;
+       letter-spacing: -0.500211px;
+     
+       
+       color: var.$secondary-color;
+    }
+
+
+}
+@media (max-width:992px) {
+    .our{
+      .our__cards {
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+  @media (max-width:764px) {
+    .our{
+      .our__cards {
+        grid-template-columns: auto ;
+      }
+    }
+  }

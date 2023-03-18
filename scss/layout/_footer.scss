@@ -2,7 +2,7 @@
  @use "../abstract/mixin" as mixin ;
 
 
-  footer{
+  .footer{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -10,10 +10,10 @@
     padding: 20px 0;
     background-color: var.$nav-color;
     z-index: 10;
-    &.__container{
+    &__container{
         width: 100%;
         display: flex;
-        @include mixin.flex-box(row, space-between, center)  
+        @include mixin.flex-box(row, space-between, center);  
     }
     &__logo{
         &__logo-img{
@@ -41,8 +41,9 @@
 
     }
     &__telephone{
-        
-        @include mixin.flex-box(row, space-between, center) ; 
+         flex-direction: column;
+        //  display: block;
+        // @include mixin.flex-box(row, space-between, center) ; 
         &__telephone-img{
             width: 17px;
             height: 17px;
