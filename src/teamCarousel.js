@@ -1,6 +1,6 @@
 var swiper2 = new Swiper(".slide-content2", {
     slidesPerView: 4,
-    spaceBetween: 25,
+    spaceBetween: 31,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
@@ -8,11 +8,11 @@ var swiper2 = new Swiper(".slide-content2", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      dynamicBullets: true,
+      dynamicBullets: false,
     },
     navigation: {
-      nextEl: ".swiper-button-next2",
-      prevEl: ".swiper-button-prev2",
+      nextEl: ".slide-container2 .swiper-button-next",
+      prevEl: ".slide-container2 .swiper-button-prev",
     },
 
     breakpoints:{
@@ -22,7 +22,7 @@ var swiper2 = new Swiper(".slide-content2", {
         520: {
             slidesPerView: 2,
         },
-        950: {
+        1200: {
             slidesPerView: 4,
         },
     },

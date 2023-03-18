@@ -12,3 +12,19 @@ $nav-color: rgba(23, 25, 29, 0.7);
 $gray:#AAAAAA;
 $form-drink-bg: rgba(83, 83, 83, 0.1);
 $form-drink-shedow: rgba(241, 216, 253, 0.08);
+
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
