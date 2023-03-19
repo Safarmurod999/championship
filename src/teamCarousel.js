@@ -1,32 +1,38 @@
-var swiper2 = new Swiper(".slide-content2", {
+var teamSwiper = new Swiper('.team-swiper', {
     slidesPerView: 4,
-    spaceBetween: 31,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
     grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: false,
+    autoplay:{
+        delay: 2500,
     },
     navigation: {
-      nextEl: ".slide-container2 .swiper-button-next",
-      prevEl: ".slide-container2 .swiper-button-prev",
+        nextEl: '.team-swiper-next',
+        prevEl: '.team-swiper-prev',
     },
-
-    breakpoints:{
+    breakpoints: {
+        // when window width is <= 480px
         0: {
             slidesPerView: 1,
+            spaceBetween: 10
         },
-        520: {
+        // when window width is <= 768px
+        588: {
             slidesPerView: 2,
+            spaceBetween: 20
         },
-        1200: {
+        // when window width is <= 992px
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1440: {
             slidesPerView: 4,
-        },
-    },
-  });
+            spaceBetween: 30
+        }
+    }
+});
 
-export default swiper2;
- 
+
+export default teamSwiper;

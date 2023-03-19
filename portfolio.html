@@ -1,147 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
-</head>
+    <!-- Bootstrap link -->
 
-<body>
-  <header>
-    <nav id="nav" class="navbar bg-body-tertiary fixed-top navbar-expand-xl" w3-include-html="nav.html"></nav>
-  </header>
-  <main>
-    <section class="porfolio">
-      <section class="main">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Unicons link -->
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+    <!-- style css -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Agency</title>
+  </head>
+
+  <body>
+    <!-- backtop -->
+
+    <button id="backtop">
+      <a href="#"><img src="images/home/backtop.svg" alt="backtop" /></a>
+    </button>
+
+    <!-- header -->
+
+    <header>
+      <nav
+        id="navbar"
+        class="navbar bg-body-tertiary fixed-top navbar-expand-xl"
+      >
         <div class="container">
-          <h1>Bajargan loyihalarimiz</h1>
-          <div class="wrap">
-            <ul class="tabBtn">
-              <li><button onclick="showTab(0)">Barchasi</button></li>
-              <li><button onclick="showTab(1)">Veb sayt</button></li>
-              <li><button onclick="showTab(2)">Veb dizayn</button></li>
-              <li><button onclick="showTab(3)">SMM</button></li>
-              <li><button onclick="showTab(4)">Mobil ilova</button></li>
-            </ul>
-            <div class="showPanel">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/navbar/nav-logo.svg" alt="navbar-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center align-items-center flex-grow-1"
+              >
+                <li class="navbar-item">
+                  <a
+                    class="navbar-link active"
+                    aria-current="page"
+                    href="#about"
+                    >О компании</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#portfolio">Портфолио</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#services">Услуги</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#footer"> Контакты </a>
+                </li>
+              </ul>
+              <div class="navbar__right flex-column flex-xl-row">
+                <div class="navbar__right-mode">
+                  <button class="mode-btn"><i class="uil uil-sun"></i></button>
+                  <button class="mode-btn active">
+                    <i class="uil uil-moon"></i>
+                  </button>
+                </div>
+                <div class="navbar__right-contact">
+                  <p class="navbar__right-number">+998 90 777-77-77</p>
+                  <p class="navbar__right-email">chotatam@gmail.com</p>
+                </div>
+                <a href="tel:+998907777777"
+                  ><button class="navbar__right-call">
+                    Заказать звонок
+                  </button></a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </section>
-     <section class="form-section">
-      <div class="container">
-        <form class="form">
-          <div class="form__left">
-            <h3>Sizni bir finjon qahva ustida loyihangizni <br>
-              batafsil muhokama qilishga mamnuniyat <br>
-              ila taklif qilamiz.</h3>
-            <input type="text" placeholder="Ismingiz">
-            <input type="text" placeholder="Telefon raqamingiz">
-            <input type="text" placeholder="G'oyangiz xaqida qisqacha (Muhim emas)">
-            <h4>Qanday xizmatlardan foydalanishni xoxlaysiz?</h4>
-            <div class="form__checkbox">
-              <div class="form__checkbox-left">
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="backend" id="backend">
-                <label for="backend">Backend</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="csr" id="csr">
-                <label for="csr">CRM ishlab chiqish</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="magazin" id="magazin">
-                <label for="magazin">Internet magazin <br>
-                  ishlab chiqish</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="logotip" id="logotip">
-                <label for="logotip">Logotip va Brandbook</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="portal" id="portal">
-                <label for="portal">Portal ishlab chiqish</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="veb" id="veb">
-                <label for="veb">Veb dizayn</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="mobilograf" id="mobilograf">
-                <label for="mobilodraf">Mobilograf</label>
-                </div>
-              </div>
-              <div class="form__checkbox-right">
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="frontend" id="frontend">
-                <label for="frontend">Frontend</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="dizayn" id="dizayn">
-                <label for="dizayn">Grafik dizayn</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="mobil" id="mobil">
-                <label for="mobil">Mobil ilova <br>
-                  ishlab chiqish</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="motion" id="motion">
-                <label for="motion">Motion dizayn</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="sayt" id="sayt">
-                <label for="sayt">Veb sayt ishlab chiqish</label>
-                </div>
-                <div class="form__checkbox-box">
-                  <input type="checkbox" name="smm" id="smm">
-                <label for="smm">SMM dizayn</label>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="form__right">
-            <div class="form__drinks">
-              <div class="form__drinks-content">
-                <input type="checkbox" name="a-cofe" id="a-cofe">
-                <img src="./images/portfolio/form-img/a-cofe.png" alt="achchiq kofe">
-                <label for="a-cofe">Achchiq kofe</label>
-              </div>
-              <div class="form__drinks-content">
-                <input type="checkbox" name="s-cofe" id="s-cofe">
-                <img src="./images/portfolio/form-img/s-cofe.png" alt="sutli kofe">
-                <label for="s-cofe">Sutli kofe</label>
-              </div>
-              <div class="form__drinks-content">
-                <input type="checkbox" name="suv" id="suv">
-                <img src="./images/portfolio/form-img/suv.png" alt="suv">
-                <label for="suv">Suv</label>
-              </div>
-              <div class="form__drinks-content">
-                <input type="checkbox" name="choy" id="choy">
-                <img src="./images/portfolio/form-img/choy.png" alt="choy">
-                <label for="choy">Choy</label>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-     </section>
-      <footer id="footer" class="footer" w3-include-html="footer.html"></footer>
-    </section>
-  </main>
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script type="module" src="main.js"></script>
-  <script src="./src/protfolioPage.js"></script>
-</body>
+      </nav>
+    </header>
 
+    <!-- main part of page -->
+
+    <main>
+      
+      <!-- Portfolio forma va footer -->
+
+      <section id="portfolio" class="porfolio">
+        <section class="main">
+          <div class="container">
+            <h1>Bajargan loyihalarimiz</h1>
+            <div class="wrap">
+              <ul class="tabBtn">
+                <li><button onclick="showTab(0)">Barchasi</button></li>
+                <li><button onclick="showTab(1)">Veb sayt</button></li>
+                <li><button onclick="showTab(2)">Veb dizayn</button></li>
+                <li><button onclick="showTab(3)">SMM</button></li>
+                <li><button onclick="showTab(4)">Mobil ilova</button></li>
+              </ul>
+              <div class="showPanel"></div>
+            </div>
+          </div>
+        </section>
+        <section class="form-section">
+          <div class="container">
+            <form class="form">
+              <div class="form__left">
+                <h3>
+                  Sizni bir finjon qahva ustida loyihangizni batafsil muhokama
+                  qilishga mamnuniyat ila taklif qilamiz.
+                </h3>
+                <div class="form__left__input">
+                  <input type="text" placeholder="Ismingiz" />
+                  <input type="text" placeholder="Telefon raqamingiz" />
+                  <input
+                    type="text"
+                    placeholder="G'oyangiz xaqida qisqacha (Muhim emas)"
+                  />
+                </div>
+                <h4>Qanday xizmatlardan foydalanishni xoxlaysiz?</h4>
+                <div class="form__checkbox">
+                  <div class="form__checkbox-left">
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="backend" id="backend" />
+                      <label for="backend">Backend</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="csr" id="csr" />
+                      <label for="csr">CRM ishlab chiqish</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="magazin" id="magazin" />
+                      <label for="magazin"
+                        >Internet magazin <br />
+                        ishlab chiqish</label
+                      >
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="logotip" id="logotip" />
+                      <label for="logotip">Logotip va Brandbook</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="portal" id="portal" />
+                      <label for="portal">Portal ishlab chiqish</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="veb" id="veb" />
+                      <label for="veb">Veb dizayn</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input
+                        type="checkbox"
+                        name="mobilograf"
+                        id="mobilograf"
+                      />
+                      <label for="mobilodraf">Mobilograf</label>
+                    </div>
+                  </div>
+                  <div class="form__checkbox-right">
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="frontend" id="frontend" />
+                      <label for="frontend">Frontend</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="dizayn" id="dizayn" />
+                      <label for="dizayn">Grafik dizayn</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="mobil" id="mobil" />
+                      <label for="mobil"
+                        >Mobil ilova <br />
+                        ishlab chiqish</label
+                      >
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="motion" id="motion" />
+                      <label for="motion">Motion dizayn</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="sayt" id="sayt" />
+                      <label for="sayt">Veb sayt ishlab chiqish</label>
+                    </div>
+                    <div class="form__checkbox-box">
+                      <input type="checkbox" name="smm" id="smm" />
+                      <label for="smm">SMM dizayn</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__right">
+                <div class="form__drinks">
+                  <div class="form__drinks-content">
+                    <input type="checkbox" name="a-cofe" id="a-cofe" />
+                    <img
+                      src="./images/portfolio/form-img/a-cofe.png"
+                      alt="achchiq kofe"
+                    />
+                    <label for="a-cofe">Achchiq kofe</label>
+                  </div>
+                  <div class="form__drinks-content">
+                    <input type="checkbox" name="s-cofe" id="s-cofe" />
+                    <img
+                      src="./images/portfolio/form-img/s-cofe.png"
+                      alt="sutli kofe"
+                    />
+                    <label for="s-cofe">Sutli kofe</label>
+                  </div>
+                  <div class="form__drinks-content">
+                    <input type="checkbox" name="suv" id="suv" />
+                    <img src="./images/portfolio/form-img/suv.png" alt="suv" />
+                    <label for="suv">Suv</label>
+                  </div>
+                  <div class="form__drinks-content">
+                    <input type="checkbox" name="choy" id="choy" />
+                    <img
+                      src="./images/portfolio/form-img/choy.png"
+                      alt="choy"
+                    />
+                    <label for="choy">Choy</label>
+                  </div>
+                </div>
+                <button type="submit" class="main-button">
+                  <span></span>Mijoz bo'lish
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer
+          id="footer"
+          class="footer"
+          w3-include-html="footer.html"
+        ></footer>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="main.js"></script>
+    <script src="./src/protfolioPage.js"></script>
+  </body>
 </html>

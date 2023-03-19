@@ -2,17 +2,20 @@
 @use "../abstract/variables" as var;
 @use "../abstract/mixin" as mixin; //Navbar begins 
 
+:root {
+    --btn-bg: #fff;
+}
+
+body.dark {
+    --btn-bg: #151a1e;
+}
+
 .navbar {
     padding: 15px 0 !important;
     background-color: var.$nav-color !important;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-
-    .offcanvas {
-        background-color: var.$nav-color !important;
-        opacity: 1
-    }
 
     &-toggler {
         border-color: var.$secondary-color;
@@ -80,7 +83,7 @@
             font-family: Proxima Nova;
             font-style: normal;
             font-weight: 700;
-            color: var.$secondary-color
+            color: var.$secondary-color;
         }
 
         &-number {
@@ -98,11 +101,17 @@
         &-call {
             padding: 12px 21px !important;
             background: var.$btn-color;
-            border-radius: 7px
+            border-radius: 7px;
+            border: 2px solid var.$btn-color;
+            &:hover{
+                background-color: transparent;
+                color: var.$btn-color;
+            }
         }
 
         &-mode {
             @include mixin.flex-box(row, space-between, center);
+            padding: 2px;
             width: 93px;
             height: 40px;
             background: #151a1e;
@@ -112,6 +121,7 @@
 
         .mode-btn {
             @include mixin.flex-box(row, center, center);
+            padding: 6.76px;
             width: 36px;
             height: 36px;
             border-radius: 40px;
@@ -119,14 +129,14 @@
 
             i {
                 height: 22px;
-                font-size: 22px;
+                font-size: 26px;
                 @include mixin.flex-box(row, center, center)
             }
         }
 
         .active {
-            background-color: var.$primary-color;
-            color: var.$secondary-color
+            background-color: var.$purple;
+            color: var.$secondary-color;
         }
     }
 }
@@ -136,10 +146,12 @@
     -webkit-box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, .2);
     box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, .2)
 }
-
 @media (max-width :1200px) {
     .navbar {
-
+    .offcanvas {
+        background-color: var.$nav-color !important;
+        opacity: 1;
+    }
         &-link,
         &-item {
             margin: 15px 0 !important

@@ -53,12 +53,12 @@ let tabObj1 = [
 
 let tabObj2 = [
   {
-    img: "images/portfolio/portfolio-4.png",
-    title: "Mobil ilova",
-  },
-  {
     img: "images/portfolio/portfolio-5.png",
     title: "Veb sayt",
+  },
+  {
+    img: "images/portfolio/portfolio-4.png",
+    title: "Mobil ilova",
   },
   {
     img: "images/portfolio/portfolio-6.png",
@@ -77,7 +77,7 @@ let tabObj2 = [
     title: "SMM",
   },
   {
-    img: "images/portfolio/portfolio-6.png",
+    img: "images/portfolio/portfolio-1.png",
     title: "Mobil ilova",
   },
   {
@@ -297,4 +297,4 @@ function showTabHome(index) {
   renderCardHome(arr2[index]);
 }
 
-export default showTabHome;
+// export default showTabHome;

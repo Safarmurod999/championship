@@ -1,6 +1,6 @@
 import get from "../src/getElement.js";
 
-let sectionCard = get("#card");
+let sectionCard = document.getElementById("#card");
 
 let obj = [
     {

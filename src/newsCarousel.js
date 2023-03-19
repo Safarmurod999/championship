@@ -1,31 +1,31 @@
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 4,
-    spaceBetween: 31,
+var newsSwiper = new Swiper(".news-swiper", {
+    slidesPerView: 3,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: false,
+    autoplay:{
+        delay: 2000,
     },
+    grabCursor: 'true',
     navigation: {
-      nextEl: ".slide-container .swiper-button-next",
-      prevEl: ".slide-container .swiper-button-prev",
+        nextEl: ".news-swiper-next",
+        prevEl: ".news-swiper-prev",
     },
 
-    breakpoints:{
+    breakpoints: {
         0: {
             slidesPerView: 1,
+            spaceBetween: 10
         },
-        520: {
+        720: {
             slidesPerView: 2,
+            spaceBetween: 20
         },
         1200: {
             slidesPerView: 3,
+            spaceBetween: 31
         },
     },
-  });
+});
 
-export default swiper;
+export default newsSwiper;

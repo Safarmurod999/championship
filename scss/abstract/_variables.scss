@@ -12,3 +12,66 @@ $nav-color: rgba(23, 25, 29, 0.7);
 $gray:#AAAAAA;
 $form-drink-bg: rgba(83, 83, 83, 0.1);
 $form-drink-shedow: rgba(241, 216, 253, 0.08);
+
+
+body.light{
+   
+    *{
+        color: #000 !important;
+
+    }
+    .navbar{
+        background: rgba(23, 25, 29, 0.1) !important;
+        &-brand{
+            img{
+                content: url('../../images/navbar/dark-logo.svg');
+            }
+        }
+        &-link{
+            &:hover{
+                color: #6911AD !important;
+            }
+        }
+        &__right{
+            &-mode{
+            background-color: #fff;
+            .mode-btn.active{
+            i{
+                color: #fff !important;
+            }
+            }
+        }
+        &-call{
+            color: #fff !important;
+            &:hover{
+                color: #6911AD !important;
+            }
+        }}
+    }
+    .navbar-shrink{
+        background-color: rgba(0, 0, 0,0.3) !important;
+    }
+    .card{
+        background: rgba(243, 243, 243, 0.5) !important;
+        &-content{
+            background: rgba(255,255,255, 0.9) !important;
+        }
+    }
+    .services{
+        .container{
+            background-color:rgba(243, 243, 243, 0.5) !important;
+        }
+    }
+    .form,.footer{
+        background: rgba(255,255,255, 0.9) !important;
+    }
+    .footer{
+        &__logo{
+            img{
+                content: url('../../images/footer/footer-dark.svg');
+            }
+        }
+    }
+
+    background:url('../../images/home/bg-light.png'),rgba(255, 255, 255,0.8);
+}
