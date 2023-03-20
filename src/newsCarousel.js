@@ -6,7 +6,7 @@ var newsSwiper = new Swiper(".news-swiper", {
     autoplay:{
         delay: 2000,
     },
-    grabCursor: 'true',
+
     navigation: {
         nextEl: ".news-swiper-next",
         prevEl: ".news-swiper-prev",
@@ -28,4 +28,4 @@ var newsSwiper = new Swiper(".news-swiper", {
     },
 });
 
-export default newsSwiper;
+// export default newsSwiper;

@@ -1,6 +1,5 @@
-O'rinov Safarmurod ---> Navbar,carousel,from
-Jasurbek Mirzabayev ---> News Page
-Abduhakimova Dilsora ---> Portfolio page , portfolio section Home page dagi
-Yusupova Qunduz ---> Bizning xizmatler (Home pagedagi), footer
+O'rinov Safarmurod ---> Navbar,carousel, News page , footer
+Abduhakimova Dilsora ---> Portfolio page , portfolio section Home page dagi, Form
+Yusupova Qunduz ---> Bizning xizmatler (Home pagedagi)
 Davlatboyeva Munisa ---> Home page boshidan to portfolio sectiongacha
 

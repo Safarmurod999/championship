@@ -1,17 +1,13 @@
-
 @use "../abstract/variables" as var;
-
 .showPanel__card {
   position: relative;
   width: 100%;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   img {
-    width: 100%
+    width: 100%;
   }
-
   span {
     position: absolute;
     top: 15px;
@@ -24,9 +20,8 @@
     height: 37px;
     -webkit-box-shadow: 4px 4px 14px var.$shadow-color;
     box-shadow: 4px 4px 14px var.$shadow-color;
-    border-radius: 10px
+    border-radius: 10px;
   }
-
   &-hover {
     display: none;
     position: absolute;
@@ -36,14 +31,12 @@
     border-radius: 10px;
     width: 93%;
     height: 90.5%;
-
     img {
       position: absolute;
       top: 0;
       right: 0;
-      width: auto;  
+      width: auto;
     }
-
     p {
       text-align: left;
       position: absolute;
@@ -52,11 +45,10 @@
       color: var.$secondary-color;
       font-weight: 700;
       font-size: 1.25rem;
-      line-height: 1.5rem
+      line-height: 1.5rem;
     }
   }
-
   &:hover &-hover {
-    display: block
+    display: block;
   }
 }

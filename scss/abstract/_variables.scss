@@ -51,6 +51,13 @@ body.light{
     .navbar-shrink{
         background-color: rgba(0, 0, 0,0.3) !important;
     }
+    @media (max-width:1200px){
+        .navbar{
+            .offcanvas{
+                background: rgba(243, 243, 243, 0.5) !important;
+            }
+        }
+    }
     .card{
         background: rgba(243, 243, 243, 0.5) !important;
         &-content{
@@ -58,12 +65,20 @@ body.light{
         }
     }
     .services{
-        .container{
+        &__container{
             background-color:rgba(243, 243, 243, 0.5) !important;
         }
     }
     .form,.footer{
         background: rgba(255,255,255, 0.9) !important;
+    }
+    .news{
+        background: url('../../images/news/top-line-light.png') center 533px,url('../../images/news/bottom-line-light.png') center 1923px;
+        background-repeat: no-repeat;
+        background-size: 100%;       
+        &__bottom,&__card{
+            background: rgba(255, 255, 255, 0.9) !important;
+        }
     }
     .footer{
         &__logo{

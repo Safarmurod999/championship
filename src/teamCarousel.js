@@ -27,7 +27,7 @@ var teamSwiper = new Swiper('.team-swiper', {
             slidesPerView: 3,
             spaceBetween: 30
         },
-        1440: {
+        1240: {
             slidesPerView: 4,
             spaceBetween: 30
         }
@@ -35,4 +35,4 @@ var teamSwiper = new Swiper('.team-swiper', {
 });
 
 
-export default teamSwiper;
+// export default teamSwiper;
