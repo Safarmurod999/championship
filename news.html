@@ -1,24 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Agentlik sayti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency</title>
+
+    <!-- swiper carousel link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.css"
+      integrity="sha512-n/86mxSdfFpsFtq9QYVhRlke9BQ/ZqIaRBe/dboH4l8JwBVitjpCS2HnDfbZnISV5Zq1lKONL/aQDqDQmtY/cA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Unicons link -->
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+
+    <!-- style css -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- backtop -->
+
+    <!-- <button > -->
+    <a id="backtop" href="#"
+      ><img src="images/home/backtop.svg" alt="backtop"
+    /></a>
+    <!-- </button> -->
+
+    <!-- header -->
+
     <header>
-        <nav
-          id="navbar"
-          class="navbar bg-body-tertiary fixed-top navbar-expand-lg"
-          w3-include-html="nav.html"
-        ></nav>
-      </header>
+      <nav
+        id="navbar"
+        class="navbar bg-body-tertiary fixed-top navbar-expand-xl"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/navbar/nav-logo.svg" alt="navbar-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center align-items-center flex-grow-1"
+              >
+                <li class="navbar-item">
+                  <a
+                    class="navbar-link active"
+                    aria-current="page"
+                    href="#about"
+                    >О компании</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#services">Услуги</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#footer"> Контакты </a>
+                </li>
+              </ul>
+              <div class="navbar__right flex-column flex-xl-row">
+                <div class="navbar__right-mode">
+                  <button class="mode-btn"><i class="uil uil-sun"></i></button>
+                  <button class="mode-btn active">
+                    <i class="uil uil-moon"></i>
+                  </button>
+                </div>
+                <div class="navbar__right-contact">
+                  <p class="navbar__right-number">+998 90 777-77-77</p>
+                  <p class="navbar__right-email">chotatam@gmail.com</p>
+                </div>
+                <a class="navbar__right-call" href="tel:+998907777777">
+                  Заказать звонок
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main part of page -->
+
     <main>
-    
+      <!-- news section -->
+
+      <section class="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9">
+              <div class="news__left d-flex flex-column align-items-center">
+                <div class="news__top" title="yanglikliklar">
+                  <img src="images/news/news-main.png" alt="main img" />
+                </div>
+                <div class="news__bottom" title="yanglikliklar">
+                  <h1 class="news__bottom__title">
+                    IT Parkʼda eksportga yo‘naltirilgan IT-kompaniyalar bilan
+                    uchrashuv bo‘lib o‘tdi
+                  </h1>
+                  <p class="news__bottom__text">
+                    24-fevral kuni IT Park Toshkent filialida IT Park direktori
+                    Farhod Ibragimov va tashkilotning rezident-eksportyor
+                    kompaniyalari oʻrtasida uchrashuv bo‘lib o‘tdi.
+                  </p>
+                  <p class="news__bottom__text">
+                    Tadbirning maqsadi – IT va BPO xizmatlari eksportining joriy
+                    holatini va O‘zbekistonda IT eksportini oshirish choralarini
+                    muhokama qilishdan iborat.
+                  </p>
+                  <p class="news__bottom__text">
+                    Uchrashuv davomida Farhod Zairovich eksportning joriy
+                    holatiga oid ayrim statistik ma’lumotlar bilan boʻlishdi.
+                    Shunday qilib, oʻtgan yilgi maʼlumotlarga koʻra,
+                    IT-xizmatlar eksporti hajmi $140 millionni tashkil etdi,
+                    eksportning qariyb 48 foizi dasturiy taʼminotni yaratuvchi
+                    kompaniyalariga toʻgʻri keladi, 44 foizdan biroz koʻprogʻi
+                    esa biznes jarayonlari autsorsingi bilan shugʻullanuvchi
+                    kompaniyalarga toʻgʻri keladi. Bundan tashqari, eksportning
+                    80% dan ziyodi AQSh bozoriga toʻgʻri keladi, ammo boshqa
+                    koʻplab potensial bozorlar, jumladan Yevropa, Kanada va
+                    Sharq mamlakatlari mavjud.
+                  </p>
+                  <p class="news__bottom__text">
+                    “Afsuski, eksportning asosiy qismi Toshkentdan amalga
+                    oshiriladi, demak, biz boshqa hududlardan ham eksportni
+                    yanada oshirishga e’tibor qaratishimiz kerak. Barchangizga
+                    ma’lumki, Prezident bizga IT-xizmatlar eksportini 300
+                    million dollargacha oshirish vazifasini qo‘ydi. Ishonchim
+                    komilki, birgalikdagi sa’y-harakatlarimiz va bilimlarimiz
+                    bilan eksportni oshirish bo‘yicha samarali strategiyalarni
+                    ishlab chiqa olamiz va Oʻzbekistonda IT sohasi rivojiga oʻz
+                    hissamizni qoʻsha olamiz”, – dedi IT Park direktori.
+                  </p>
+                  <img src="images/news/news-bottom.png" alt="it park" />
+                  <p class="news__bottom__text">
+                    Hozirda IT Park Uzbekistan xalqaro moliya markazi hamda
+                    kompaniyalarga yangi mahsulot va xizmatlarni nazorat
+                    qilinadigan muhitda testdan o‘tkazish imkonini beruvchi
+                    tartibga soluvchi sandbox yaratish ustida ishlamoqda. Bu
+                    xorijiy kompaniyalar uchun qulaylik va xavfsizlik darajasini
+                    taʼminlaydigan shartnomalar va kelishuvlar uchun ingliz
+                    huquqidan foydalanish imkoniyatini oʻz ichiga oladi.
+                  </p>
+                  <p class="news__bottom__text">
+                    Tashkilot, shuningdek, rezident eksport qiluvchi
+                    kompaniyalar uchun maxsus raqamli bankni ishlab chiqish
+                    jarayonida. U ularning ehtiyojlariga moslashtirilgan bir
+                    qator moliyaviy xizmatlarni, shu jumladan, xorijiy
+                    valyutasidagi hisoblar va raqamli toʻlov tizimlarini taklif
+                    qiladi.
+                  </p>
+                  <p class="news__bottom__text">
+                    Asosiy qism yakunida savol-javoblar sessiyasi boshlandi.
+                    Ayrim rezident kompaniyalar vakillari eksportdagi
+                    muvaffaqiyatlari bilan boʻlishdilar, shuningdek,
+                    birgalikdagi sa’y-harakatlar bilan qo‘yilgan vazifaga qanday
+                    erishish mumkinligi bo‘yicha takliflar bilan almashdilar.
+                  </p>
+                  <p class="news__bottom__text">
+                    Bundan tashqari, kompaniyalar duch kelgan toʻsiqlar haqida
+                    gapirdilar. Xususan, relokatsiya paytidagi uy-joy muammosi
+                    va uy-joy narxining oshishi haqida soʻz yuritildi. Takliflar
+                    qatorida bojxona rasmiylashtiruvi uchun imtiyozlar va
+                    xorijiy mamlakatlarga IT sohasidagi rasmiy tashriflarda
+                    ishtirok etish so‘rovi bildirildi.
+                  </p>
+                  <div
+                    class="news__bottom__footer w-100 d-flex justify-content-between align-items-center"
+                  >
+                    <p>#hi_tech #IT_PARK</p>
+                    <p><i class="uil uil-calendar-alt"></i> 14:45 22/02/23</p>
+                    <p><i class="uil uil-share-alt"></i> Ulashish</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 d-none d-md-flex flex-column align-items-center">
+              <div
+                class="news__right d-none d-lg-flex flex-column align-items-center"
+              >
+                <div class="news__card" title="yanglikliklar">
+                  <div class="news__card-img">
+                    <img src="images/news/news-design.png" alt="design" />
+                  </div>
+                  <div class="news__card-content">
+                    <h6>Dizaynni o'rgangandan keyin nima qilish kerak?</h6>
+                  </div>
+                </div>
+                <div class="news__card"  title="yanglikliklar">
+                  <div class="news__card-img">
+                    <img src="images/news/news-stock.png" alt="stock" />
+                  </div>
+                  <div class="news__card-content">
+                    <h6>
+                      Bitiruvchilarning 81 foizi o’zlari yoqtirgan ish faoliyati
+                      bilan...
+                    </h6>
+                  </div>
+                </div>
+                <div class="news__card" title="yanglikliklar">
+                  <div class="news__card-img">
+                    <img src="images/news/news-team.png" alt="team" />
+                  </div>
+                  <div class="news__card-content">
+                    <h6>Frontend yo'nalishidagi musobaqaga tayyormisiz?</h6>
+                  </div>
+                </div>
+                <div class="news__card" title="yanglikliklar">
+                  <div class="news__card-img">
+                    <img src="images/news/news-driection.png" alt="direction" />
+                  </div>
+                  <div class="news__card-content">
+                    <h6>
+                      «Najot Ta'lim»da navbatdagi kirish sinovlari bo'lib o'tdi
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+
+      <footer id="footer" class="footer" w3-include-html="footer.html"></footer>
     </main>
-    <footer id="footer" class="footer" w3-include-html="footer.html"></footer>
-  <script type="module" src="main.js"></script>
-</body>
+
+    <!-- Bootstrap scripts -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main js -->
+
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
